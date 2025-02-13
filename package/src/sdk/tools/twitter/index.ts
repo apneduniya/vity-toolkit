@@ -1,4 +1,3 @@
-import { connectionMessage, integrationMessage } from "../../helpers/common";
 import { AuthType } from "../../types";
 import { Lit } from "../../utils/lit-protocol";
 import VityToolKitSDKContext from "../../utils/vityToolKitContext";
