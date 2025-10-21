@@ -1,5 +1,6 @@
 import { connectionMessage, integrationMessage, toolMessage, type IToolMessage } from "./helpers/common";
 import { getPublicKey } from "./helpers/getPublicKey";
+import { getPrivateKey } from "./helpers/getPrivateKey";
 import VityToolKitSDKContext from "./utils/vityToolKitContext";
 import { Action, actionsMap, App, appsMap, type ConnectableApps, type IntegrableApps } from "./tools";
 import type { AppAuth, AuthType, UserAuth } from "./types";
@@ -14,18 +15,44 @@ import { defaultInstance } from "./helpers/zodDefaultInstance";
 export class VityToolKit {
     private readonly storageProvider: StorageProvider;
 
-    constructor({ userPrivateKey, appPrivateKey, storageProvider }: { userPrivateKey?: string, appPrivateKey?: string, storageProvider?: StorageProvider } = {}) {
+    constructor({ 
+        userPrivateKey, 
+        appPrivateKey, 
+        userApiKey, 
+        appApiKey, 
+        storageProvider, 
+        apiBaseUrl 
+    }: { 
+        userPrivateKey?: string, 
+        appPrivateKey?: string, 
+        userApiKey?: string,
+        appApiKey?: string,
+        storageProvider?: StorageProvider,
+        apiBaseUrl?: string
+    } = {}) {
         this.storageProvider = storageProvider || StorageProvider.PINATA;
         VityToolKitSDKContext.storageProvider = this.storageProvider;
+        VityToolKitSDKContext.apiBaseUrl = apiBaseUrl;
 
+        // Handle user credentials
         if (userPrivateKey) {
             VityToolKitSDKContext.userPrivateKey = userPrivateKey;
             VityToolKitSDKContext.userPublicKey = getPublicKey(userPrivateKey);
+            logger.info("User private key set directly");
+        } else if (userApiKey) {
+            VityToolKitSDKContext.userApiKey = userApiKey;
+            logger.info("User API key set - private key will be fetched when needed");
+            logger.debug(`User API key: ${userApiKey.substring(0, 10)}...`);
         }
 
+        // Handle app credentials
         if (appPrivateKey) {
             VityToolKitSDKContext.appPrivateKey = appPrivateKey;
             VityToolKitSDKContext.appPublicKey = getPublicKey(appPrivateKey);
+            logger.info("App private key set directly");
+        } else if (appApiKey) {
+            VityToolKitSDKContext.appApiKey = appApiKey;
+            logger.info("App API key set - private key will be fetched when needed");
         }
     }
 
@@ -82,25 +109,17 @@ export class VityToolKit {
     }
 
     async isIntegration({ app, type }: { app: IntegrableApps, type?: AuthType }) {
-        // validate 
-        const appPrivateKey = VityToolKitSDKContext.appPrivateKey;
-        const appPublicKey = VityToolKitSDKContext.appPublicKey;
-        if (!appPrivateKey) { // check if app private key is present
-            logger.error("App private key is missing");
-            // return integrationMessage({
-            //     success: false,
-            //     data: "App private key is missing",
-            // });
-            throw new Error("App private key is missing");
-        }
-
-        if (!appPublicKey) { // check if app public key is present
-            logger.error("App public key is missing");
-            // return integrationMessage({
-            //     success: false,
-            //     data: "App public key is missing",
-            // });
-            throw new Error("App public key is missing. Something might be wrong with the App private key you provided");
+        // validate and get app credentials
+        let appPrivateKey: string;
+        let appPublicKey: string;
+        
+        try {
+            const credentials = await getPrivateKey('app', VityToolKitSDKContext.appPrivateKey, VityToolKitSDKContext.appApiKey);
+            appPrivateKey = credentials.privateKey;
+            appPublicKey = credentials.publicKey;
+        } catch (error: any) {
+            logger.error(`App credentials error: ${error.message}`);
+            throw new Error(`App credentials error: ${error.message}`);
         }
 
         // get from smart contract
@@ -120,45 +139,30 @@ export class VityToolKit {
     }
 
     async isConnection({ app, type }: { app: ConnectableApps, type?: AuthType }) {
-        // validate 
-        const appPrivateKey = VityToolKitSDKContext.appPrivateKey;
-        const appPublicKey = VityToolKitSDKContext.appPublicKey;
-        if (!appPrivateKey) { // check if app private key is present
-            logger.error("App private key is missing");
-            // return integrationMessage({
-            //     success: false,
-            //     data: "App private key is missing",
-            // });
-            throw new Error("App private key is missing");
+        // validate and get app credentials
+        let appPrivateKey: string;
+        let appPublicKey: string;
+        
+        try {
+            const appCredentials = await getPrivateKey('app', VityToolKitSDKContext.appPrivateKey, VityToolKitSDKContext.appApiKey);
+            appPrivateKey = appCredentials.privateKey;
+            appPublicKey = appCredentials.publicKey;
+        } catch (error: any) {
+            logger.error(`App credentials error: ${error.message}`);
+            throw new Error(`App credentials error: ${error.message}`);
         }
 
-        if (!appPublicKey) { // check if app public key is present
-            logger.error("App public key is missing");
-            // return integrationMessage({
-            //     success: false,
-            //     data: "App public key is missing",
-            // });
-            throw new Error("App public key is missing. Something might be wrong with the App private key you provided");
-        }
-
-        const userPrivateKey = VityToolKitSDKContext.userPrivateKey;
-        const userPublicKey = VityToolKitSDKContext.userPublicKey;
-        if (!userPrivateKey) { // check if app private key is present
-            logger.error("User's private key is missing");
-            // return connectionMessage({
-            //     success: false,
-            //     data: "User's private key is missing",
-            // });
-            throw new Error("User's private key is missing");
-        }
-
-        if (!userPublicKey) { // check if app public key is present
-            logger.error("User's public key is missing");
-            // return connectionMessage({
-            //     success: false,
-            //     data: "User's public key is missing",
-            // });
-            throw new Error("User's public key is missing. Something might be wrong with the User's private key you provided");
+        // validate and get user credentials
+        let userPrivateKey: string;
+        let userPublicKey: string;
+        
+        try {
+            const userCredentials = await getPrivateKey('user', VityToolKitSDKContext.userPrivateKey, VityToolKitSDKContext.userApiKey);
+            userPrivateKey = userCredentials.privateKey;
+            userPublicKey = userCredentials.publicKey;
+        } catch (error: any) {
+            logger.error(`User credentials error: ${error.message}`);
+            throw new Error(`User credentials error: ${error.message}`);
         }
 
         // get from smart contract
@@ -178,22 +182,19 @@ export class VityToolKit {
     }
 
     async appIntegration({ app, type, authData }: { app: IntegrableApps, type?: AuthType, authData: object }) {
-        // validate
-        const appPrivateKey = VityToolKitSDKContext.appPrivateKey;
-        const appPublicKey = VityToolKitSDKContext.appPublicKey;
-        if (!appPrivateKey) { // check if app private key is present
-            logger.error("App's private key is missing");
+        // validate and get app credentials
+        let appPrivateKey: string;
+        let appPublicKey: string;
+        
+        try {
+            const credentials = await getPrivateKey('app', VityToolKitSDKContext.appPrivateKey, VityToolKitSDKContext.appApiKey);
+            appPrivateKey = credentials.privateKey;
+            appPublicKey = credentials.publicKey;
+        } catch (error: any) {
+            logger.error(`App credentials error: ${error.message}`);
             return integrationMessage({
                 success: false,
-                data: "App's private key is missing",
-            });
-        }
-
-        if (!appPublicKey) { // check if app public key is present
-            logger.error("App's public key is missing");
-            return integrationMessage({
-                success: false,
-                data: "App's public key is missing",
+                data: `App credentials error: ${error.message}`,
             });
         }
 
@@ -239,40 +240,35 @@ export class VityToolKit {
     }
 
     async initiateAppConnection({ app, type, authData }: { app: ConnectableApps, type: AuthType, authData: object }) {
-        // validate
-        const appPrivateKey = VityToolKitSDKContext.appPrivateKey;
-        const appPublicKey = VityToolKitSDKContext.appPublicKey;
-        if (!appPrivateKey) { // check if app private key is present
-            logger.error("App's private key is missing");
+        // validate and get app credentials
+        let appPrivateKey: string;
+        let appPublicKey: string;
+        
+        try {
+            const appCredentials = await getPrivateKey('app', VityToolKitSDKContext.appPrivateKey, VityToolKitSDKContext.appApiKey);
+            appPrivateKey = appCredentials.privateKey;
+            appPublicKey = appCredentials.publicKey;
+        } catch (error: any) {
+            logger.error(`App credentials error: ${error.message}`);
             return integrationMessage({
                 success: false,
-                data: "App's private key is missing",
+                data: `App credentials error: ${error.message}`,
             });
         }
 
-        if (!appPublicKey) { // check if app public key is present
-            logger.error("App's public key is missing");
-            return integrationMessage({
-                success: false,
-                data: "App's public key is missing",
-            });
-        }
-
-        const userPrivateKey = VityToolKitSDKContext.userPrivateKey;
-        const userPublicKey = VityToolKitSDKContext.userPublicKey;
-        if (!userPrivateKey) { // check if app private key is present
-            logger.error("User's private key is missing");
+        // validate and get user credentials
+        let userPrivateKey: string;
+        let userPublicKey: string;
+        
+        try {
+            const userCredentials = await getPrivateKey('user', VityToolKitSDKContext.userPrivateKey, VityToolKitSDKContext.userApiKey);
+            userPrivateKey = userCredentials.privateKey;
+            userPublicKey = userCredentials.publicKey;
+        } catch (error: any) {
+            logger.error(`User credentials error: ${error.message}`);
             return connectionMessage({
                 success: false,
-                data: "User's private key is missing",
-            });
-        }
-
-        if (!userPublicKey) { // check if app public key is present
-            logger.error("User's public key is missing");
-            return connectionMessage({
-                success: false,
-                data: "User's public key is missing",
+                data: `User credentials error: ${error.message}`,
             });
         }
 

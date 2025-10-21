@@ -1,6 +1,6 @@
 import { Connection, LAMPORTS_PER_SOL, PublicKey, sendAndConfirmTransaction, SystemProgram, Transaction } from "@solana/web3.js";
 import { toolMessage } from "../../../helpers/common";
-import VityToolKitSDKContext from "../../../utils/vityToolKitContext";
+import { getPrivateKeyFromContext } from "../../../helpers/getPrivateKey";
 import { getNetworkEndpoint, getTokenddress } from "../../../helpers/token";
 import { createTransferInstruction, getAssociatedTokenAddress, getMint, getOrCreateAssociatedTokenAccount, mintTo, transfer, transferChecked } from "@solana/spl-token";
 import { getKeypair } from "../../../helpers/getPublicKey";
@@ -13,15 +13,19 @@ const solanaWalletTransfer = async (inputParams: { to: string, amount: number, t
         let connection: Connection;
         let tx: string;
 
-        const privateKey = VityToolKitSDKContext.userPrivateKey;
-        const publicKey = VityToolKitSDKContext.userPublicKey;
-
-        // validation
-        if (!privateKey || !publicKey) {
+        // Get user credentials (private key and public key)
+        let privateKey: string;
+        let publicKey: string;
+        
+        try {
+            const credentials = await getPrivateKeyFromContext('user');
+            privateKey = credentials.privateKey;
+            publicKey = credentials.publicKey;
+        } catch (error: any) {
             return toolMessage({
                 success: false,
                 data: {
-                    error: "No user private key found. Pass the user private key in the VityToolKit constructor.",
+                    error: `No user credentials found: ${error.message}`,
                 },
             });
         }
