@@ -68,6 +68,13 @@ import { GibworkTool } from "./gibwork";
 import { gibworkExploreTool } from "./gibwork/actions/explore";
 import { gibworkTasksTool } from "./gibwork/actions/tasks";
 import { gibworkCreateTaskTool } from "./gibwork/actions/create-task";
+import { GitHubTool } from "./github";
+import { githubSearchRepositoriesTool } from "./github/actions/search-repositories";
+import { githubCreateRepositoryTool } from "./github/actions/create-repository";
+import { githubGetFileContentsTool } from "./github/actions/get-file-contents";
+import { githubCreateOrUpdateFileTool } from "./github/actions/create-or-update-file";
+import { githubCreateIssueTool } from "./github/actions/create-issue";
+import { githubCreatePullRequestTool } from "./github/actions/create-pull-request";
 
 
 //  A P P S
@@ -78,6 +85,7 @@ export enum App {
     EARN = 'earn',
     REDDIT = 'reddit',
     GIBWORK = 'gibwork',
+    GITHUB = 'github',
 }
 
 export const appsMap = {
@@ -86,6 +94,7 @@ export const appsMap = {
     [App.EARN]: EarnTool,
     [App.REDDIT]: RedditTool,
     [App.GIBWORK]: GibworkTool,
+    [App.GITHUB]: GitHubTool,
 }
 
 // Integrable apps
@@ -99,7 +108,7 @@ export type IntegrableApps = Extract<
 
 export type ConnectableApps = Extract<
     App,
-    App.TWITTER | App.REDDIT
+    App.TWITTER | App.REDDIT | App.GITHUB
 >;
 
 
@@ -170,6 +179,13 @@ export enum Action {
     GIBWORK_EXPLORE,
     GIBWORK_TASKS,
     GIBWORK_CREATE_TASK,
+
+    GITHUB_SEARCH_REPOSITORIES,
+    GITHUB_CREATE_REPOSITORY,
+    GITHUB_GET_FILE_CONTENTS,
+    GITHUB_CREATE_OR_UPDATE_FILE,
+    GITHUB_CREATE_ISSUE,
+    GITHUB_CREATE_PULL_REQUEST,
 }
 
 export const actionsMap = {
@@ -237,6 +253,13 @@ export const actionsMap = {
     [Action.GIBWORK_EXPLORE]: gibworkExploreTool,
     [Action.GIBWORK_TASKS]: gibworkTasksTool,
     [Action.GIBWORK_CREATE_TASK]: gibworkCreateTaskTool,
+
+    [Action.GITHUB_SEARCH_REPOSITORIES]: githubSearchRepositoriesTool,
+    [Action.GITHUB_CREATE_REPOSITORY]: githubCreateRepositoryTool,
+    [Action.GITHUB_GET_FILE_CONTENTS]: githubGetFileContentsTool,
+    [Action.GITHUB_CREATE_OR_UPDATE_FILE]: githubCreateOrUpdateFileTool,
+    [Action.GITHUB_CREATE_ISSUE]: githubCreateIssueTool,
+    [Action.GITHUB_CREATE_PULL_REQUEST]: githubCreatePullRequestTool,
 }
 
 
