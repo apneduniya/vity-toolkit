@@ -5,7 +5,10 @@ import { ChatPromptTemplate } from "@langchain/core/prompts";
 
 
 const llm = new ChatOpenAI({ model: "gpt-4o" });
-const toolKit = new LangchainToolkit();
+const toolKit = new LangchainToolkit({
+  userApiKey: "k2Ghzsw69OQU1Dgd3ygCtjmgc9d/Axkw42Nl5ue9bmwYgh3TkGo8Ogu1ae8o5v99Zp0YDLMkm1Ni5nKec2lDDw==",
+  apiBaseUrl: 'http://localhost:3000'
+});
 
 const tools = toolKit.getTools({ actions: [Action.SOLANA_WALLET_GENERATE_KEYPAIR, Action.SOLANA_WALLET_GET_BALANCE, Action.SOLANA_WALLET_GET_MY_PUBLIC_KEY] });
 
@@ -25,10 +28,10 @@ const agent = await createOpenAIFunctionsAgent({
 const agentExecutor = new AgentExecutor({
     agent,
     tools,
-    verbose: true,
+    verbose: false,
 });
 
 // console.log(await agentExecutor.invoke({ input: "Create a Solana Wallet and give me it's public key. Also tell me it's balance." }));
-console.log(await agentExecutor.invoke({ input: "What is the balance of 8ueAQRiLExT7M9CNSkR11FDGbx2UyJqpSxCp1y43PWWs in mainnet-beta in USDC?" }));
+console.log(await agentExecutor.invoke({ input: "Get my public key first and then tell me it's balance" }));
 // console.log(await agentExecutor.invoke({ input: "What is the balance of 8ueAQRiLExT7M9CNSkR11FDGbx2UyJqpSxCp1y43PWWs?" }));
 // console.log(await agentExecutor.invoke({ input: "What is the balance of my account in devnet?" }));

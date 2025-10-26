@@ -1,30 +1,26 @@
 import { z } from "zod";
 import { createAction } from "../../../helpers/createAction";
 import { toolMessage } from "../../../helpers/common";
-import VityToolKitSDKContext from "../../../utils/vityToolKitContext";
+import { getPrivateKeyFromContext } from "../../../helpers/getPrivateKey";
 
 
 export const solanaWalletGetMyPublicKey = async (): Promise<string> => {
-    if (!VityToolKitSDKContext) {
-        throw new Error('VityToolKit not initialized');
-    }
-    
-    const publicKey = VityToolKitSDKContext.userPublicKey;
-    if (!publicKey) {
+    try {
+        const credentials = await getPrivateKeyFromContext('user');
+        return toolMessage({
+            success: true,
+            data: {
+                publicKey: credentials.publicKey,
+            },
+        });
+    } catch (error: any) {
         return toolMessage({
             success: false,
             data: {
-                error: "No public key found",
+                error: `No user credentials found: ${error.message}`,
             },
         });
     }
-
-    return toolMessage({
-        success: true,
-        data: {
-            publicKey: publicKey,
-        },
-    });
 }
 
 export const solanaWalletGetMyPublicKeyTool = createAction({

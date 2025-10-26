@@ -7,8 +7,22 @@ import { tool, type CoreTool } from "ai";
 
 export class VercelAIToolkit extends VityToolKit {
 
-    constructor({ userPrivateKey, appPrivateKey, storageProvider }: { userPrivateKey?: string, appPrivateKey?: string, storageProvider?: StorageProvider } = {}) {
-        super({ userPrivateKey, appPrivateKey, storageProvider });
+    constructor({ 
+        userPrivateKey, 
+        appPrivateKey, 
+        userApiKey, 
+        appApiKey, 
+        storageProvider, 
+        apiBaseUrl 
+    }: { 
+        userPrivateKey?: string, 
+        appPrivateKey?: string, 
+        userApiKey?: string,
+        appApiKey?: string,
+        storageProvider?: StorageProvider,
+        apiBaseUrl?: string
+    } = {}) {
+        super({ userPrivateKey, appPrivateKey, userApiKey, appApiKey, storageProvider, apiBaseUrl });
     }
 
     private schemaToTool(schemas: ToolConfig[]) {

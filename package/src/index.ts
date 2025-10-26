@@ -3,6 +3,8 @@ import { Action, App } from './sdk/tools';
 import { createAction } from './sdk/helpers/createAction';
 import { LangchainToolkit } from './frameworks/langchain';
 import { VercelAIToolkit } from './frameworks/vercel';
+import { ApiKeyService } from './sdk/utils/apiKeyService';
+import { AuthType } from './sdk/types';
 // import { Lit } from './sdk/utils/lit-protocol';
 
 
@@ -12,7 +14,9 @@ export {
     App,
     createAction,
     LangchainToolkit,
-    VercelAIToolkit
+    VercelAIToolkit,
+    ApiKeyService,
+    AuthType
     // Lit
 }
 

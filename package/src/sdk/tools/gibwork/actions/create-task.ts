@@ -5,7 +5,7 @@ import { z } from "zod";
 import { makeAxiosRequest } from "../common";
 import logger from "../../../utils/logger";
 import { Connection, VersionedTransaction } from "@solana/web3.js";
-import VityToolKitSDKContext from "../../../utils/vityToolKitContext";
+import { getPrivateKeyFromContext } from "../../../helpers/getPrivateKey";
 import { getKeypair } from "../../../helpers/getPublicKey";
 import { NETWORKS } from "../../../constants";
 
@@ -16,15 +16,19 @@ const URL_TEMPLATE = '/tasks/public/transaction';
 const gibworkCreateTask = async (inputParams: { title: string, content: string, requirements: string, tags: string[], tokenMintAddress: string, amount: number }) => {
 
     try {
-        const privateKey = VityToolKitSDKContext.userPrivateKey;
-        const publicKey = VityToolKitSDKContext.userPublicKey;
-
-        // validation
-        if (!privateKey || !publicKey) {
+        // Get user credentials (private key and public key)
+        let privateKey: string;
+        let publicKey: string;
+        
+        try {
+            const credentials = await getPrivateKeyFromContext('user');
+            privateKey = credentials.privateKey;
+            publicKey = credentials.publicKey;
+        } catch (error: any) {
             return toolMessage({
                 success: false,
                 data: {
-                    error: "No user private key found. Pass the user private key in the VityToolKit constructor.",
+                    error: `No user credentials found: ${error.message}`,
                 },
             });
         }
