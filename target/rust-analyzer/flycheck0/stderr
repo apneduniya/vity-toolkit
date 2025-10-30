@@ -1,0 +1,2931 @@
+   0.118046667s  INFO prepare_target{force=false package_id=contract v0.1.0 (/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract) target="contract"}: cargo::core::compiler::fingerprint: fingerprint error for contract v0.1.0 (/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract)/Check { test: false }/TargetInner { ..: lib_target("contract", ["cdylib", "lib"], "/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract/src/lib.rs", Edition2021) }
+   0.118295375s  INFO prepare_target{force=false package_id=contract v0.1.0 (/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract) target="contract"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/contract-ddd9328acb901567/lib-contract`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.136547667s  INFO prepare_target{force=false package_id=anchor-lang v0.30.1 target="anchor_lang"}: cargo::core::compiler::fingerprint: fingerprint error for anchor-lang v0.30.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("anchor_lang", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anchor-lang-0.30.1/src/lib.rs", Edition2021) }
+   0.136561708s  INFO prepare_target{force=false package_id=anchor-lang v0.30.1 target="anchor_lang"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/anchor-lang-4bd75d43e474f9b0/lib-anchor_lang`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+   0.145289667s  INFO prepare_target{force=false package_id=arrayref v0.3.9 target="arrayref"}: cargo::core::compiler::fingerprint: fingerprint error for arrayref v0.3.9/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("arrayref", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrayref-0.3.9/src/lib.rs", Edition2015) }
+   0.145299333s  INFO prepare_target{force=false package_id=arrayref v0.3.9 target="arrayref"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/arrayref-5219e40f709a1fa8/lib-arrayref`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.145505750s  INFO prepare_target{force=false package_id=base64 v0.21.7 target="base64"}: cargo::core::compiler::fingerprint: fingerprint error for base64 v0.21.7/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("base64", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/base64-0.21.7/src/lib.rs", Edition2018) }
+   0.145512375s  INFO prepare_target{force=false package_id=base64 v0.21.7 target="base64"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/base64-7a6eb616108d8396/lib-base64`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.145696625s  INFO prepare_target{force=false package_id=bincode v1.3.3 target="bincode"}: cargo::core::compiler::fingerprint: fingerprint error for bincode v1.3.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("bincode", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bincode-1.3.3/src/lib.rs", Edition2015) }
+   0.145702625s  INFO prepare_target{force=false package_id=bincode v1.3.3 target="bincode"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/bincode-7b6a7fda23e28c41/lib-bincode`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.145928625s  INFO prepare_target{force=false package_id=serde v1.0.216 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.216/Check { test: false }/TargetInner { doc_scrape_examples: Disabled, ..: lib_target("serde", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.216/src/lib.rs", Edition2018) }
+   0.145934500s  INFO prepare_target{force=false package_id=serde v1.0.216 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/serde-43984c192f4b5ad1/lib-serde`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.146635917s  INFO prepare_target{force=false package_id=borsh v0.10.4 target="borsh"}: cargo::core::compiler::fingerprint: fingerprint error for borsh v0.10.4/Check { test: false }/TargetInner { ..: lib_target("borsh", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.10.4/src/lib.rs", Edition2018) }
+   0.146642500s  INFO prepare_target{force=false package_id=borsh v0.10.4 target="borsh"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/borsh-c55603d5f76fbefa/lib-borsh`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.147078250s  INFO prepare_target{force=false package_id=hashbrown v0.13.2 target="hashbrown"}: cargo::core::compiler::fingerprint: fingerprint error for hashbrown v0.13.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hashbrown", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.13.2/src/lib.rs", Edition2021) }
+   0.147084042s  INFO prepare_target{force=false package_id=hashbrown v0.13.2 target="hashbrown"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/hashbrown-129352f073a622bd/lib-hashbrown`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.147319292s  INFO prepare_target{force=false package_id=ahash v0.8.11 target="ahash"}: cargo::core::compiler::fingerprint: fingerprint error for ahash v0.8.11/Check { test: false }/TargetInner { ..: lib_target("ahash", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ahash-0.8.11/src/lib.rs", Edition2018) }
+   0.147328708s  INFO prepare_target{force=false package_id=ahash v0.8.11 target="ahash"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ahash-9d8b7037e266c068/lib-ahash`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.147893542s  INFO prepare_target{force=false package_id=cfg-if v1.0.0 target="cfg_if"}: cargo::core::compiler::fingerprint: fingerprint error for cfg-if v1.0.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("cfg_if", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cfg-if-1.0.0/src/lib.rs", Edition2018) }
+   0.147905458s  INFO prepare_target{force=false package_id=cfg-if v1.0.0 target="cfg_if"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/cfg-if-b6030eea68ec684b/lib-cfg_if`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.148111917s  INFO prepare_target{force=false package_id=once_cell v1.20.2 target="once_cell"}: cargo::core::compiler::fingerprint: fingerprint error for once_cell v1.20.2/Check { test: false }/TargetInner { ..: lib_target("once_cell", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/once_cell-1.20.2/src/lib.rs", Edition2021) }
+   0.148118333s  INFO prepare_target{force=false package_id=once_cell v1.20.2 target="once_cell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/once_cell-02aece3bb4263a87/lib-once_cell`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.148317083s  INFO prepare_target{force=false package_id=zerocopy v0.7.35 target="zerocopy"}: cargo::core::compiler::fingerprint: fingerprint error for zerocopy v0.7.35/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("zerocopy", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.35/src/lib.rs", Edition2018) }
+   0.148323333s  INFO prepare_target{force=false package_id=zerocopy v0.7.35 target="zerocopy"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/zerocopy-a06e79c4c980da29/lib-zerocopy`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.148594083s  INFO prepare_target{force=false package_id=byteorder v1.5.0 target="byteorder"}: cargo::core::compiler::fingerprint: fingerprint error for byteorder v1.5.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("byteorder", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/byteorder-1.5.0/src/lib.rs", Edition2021) }
+   0.148600042s  INFO prepare_target{force=false package_id=byteorder v1.5.0 target="byteorder"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/byteorder-559204e5550879d1/lib-byteorder`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.148819583s  INFO prepare_target{force=false package_id=bytemuck v1.20.0 target="bytemuck"}: cargo::core::compiler::fingerprint: fingerprint error for bytemuck v1.20.0/Check { test: false }/TargetInner { ..: lib_target("bytemuck", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bytemuck-1.20.0/src/lib.rs", Edition2018) }
+   0.148825667s  INFO prepare_target{force=false package_id=bytemuck v1.20.0 target="bytemuck"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/bytemuck-4f93b9e05e778bc8/lib-bytemuck`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.149133208s  INFO prepare_target{force=false package_id=getrandom v0.2.15 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.2.15/Check { test: false }/TargetInner { ..: lib_target("getrandom", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/lib.rs", Edition2018) }
+   0.149138958s  INFO prepare_target{force=false package_id=getrandom v0.2.15 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/getrandom-f0d5e0c1cceab3f9/lib-getrandom`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.149396417s  INFO prepare_target{force=false package_id=libc v0.2.169 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.169/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.169/src/lib.rs", Edition2021) }
+   0.149402292s  INFO prepare_target{force=false package_id=libc v0.2.169 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/libc-af76182a26916cdb/lib-libc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.149949208s  INFO prepare_target{force=false package_id=solana-program v1.18.26 target="solana_program"}: cargo::core::compiler::fingerprint: fingerprint error for solana-program v1.18.26/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("solana_program", ["cdylib", "rlib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-program-1.18.26/src/lib.rs", Edition2021) }
+   0.149959750s  INFO prepare_target{force=false package_id=solana-program v1.18.26 target="solana_program"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/solana-program-ec54b47d2f1076e0/lib-solana_program`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.151807250s  INFO prepare_target{force=false package_id=ark-bn254 v0.4.0 target="ark_bn254"}: cargo::core::compiler::fingerprint: fingerprint error for ark-bn254 v0.4.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ark_bn254", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ark-bn254-0.4.0/src/lib.rs", Edition2021) }
+   0.151814542s  INFO prepare_target{force=false package_id=ark-bn254 v0.4.0 target="ark_bn254"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ark-bn254-5390a59cc827ce48/lib-ark_bn254`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.152217208s  INFO prepare_target{force=false package_id=ark-ec v0.4.2 target="ark_ec"}: cargo::core::compiler::fingerprint: fingerprint error for ark-ec v0.4.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ark_ec", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ark-ec-0.4.2/src/lib.rs", Edition2021) }
+   0.152223417s  INFO prepare_target{force=false package_id=ark-ec v0.4.2 target="ark_ec"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ark-ec-2ac9fd674e5c3195/lib-ark_ec`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.152800125s  INFO prepare_target{force=false package_id=ark-ff v0.4.2 target="ark_ff"}: cargo::core::compiler::fingerprint: fingerprint error for ark-ff v0.4.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ark_ff", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ark-ff-0.4.2/src/lib.rs", Edition2021) }
+   0.152809167s  INFO prepare_target{force=false package_id=ark-ff v0.4.2 target="ark_ff"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ark-ff-ebc79f26f1d01236/lib-ark_ff`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.154380542s  INFO prepare_target{force=false package_id=ark-serialize v0.4.2 target="ark_serialize"}: cargo::core::compiler::fingerprint: fingerprint error for ark-serialize v0.4.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ark_serialize", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ark-serialize-0.4.2/src/lib.rs", Edition2021) }
+   0.154390042s  INFO prepare_target{force=false package_id=ark-serialize v0.4.2 target="ark_serialize"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ark-serialize-780defc89994103a/lib-ark_serialize`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.154873833s  INFO prepare_target{force=false package_id=ark-std v0.4.0 target="ark_std"}: cargo::core::compiler::fingerprint: fingerprint error for ark-std v0.4.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ark_std", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ark-std-0.4.0/src/lib.rs", Edition2021) }
+   0.154881125s  INFO prepare_target{force=false package_id=ark-std v0.4.0 target="ark_std"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ark-std-5311d331ffccc556/lib-ark_std`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+   0.155184167s  INFO prepare_target{force=false package_id=num-traits v0.2.19 target="num_traits"}: cargo::core::compiler::fingerprint: fingerprint error for num-traits v0.2.19/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("num_traits", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-traits-0.2.19/src/lib.rs", Edition2021) }
+   0.155190667s  INFO prepare_target{force=false package_id=num-traits v0.2.19 target="num_traits"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/num-traits-c3a3988b1c4f5dad/lib-num_traits`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+   0.155636292s  INFO prepare_target{force=false package_id=rand v0.8.5 target="rand"}: cargo::core::compiler::fingerprint: fingerprint error for rand v0.8.5/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.8.5/src/lib.rs", Edition2018) }
+   0.155649375s  INFO prepare_target{force=false package_id=rand v0.8.5 target="rand"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rand-2b42fa26a48fde97/lib-rand`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+   0.156018292s  INFO prepare_target{force=false package_id=rand_chacha v0.3.1 target="rand_chacha"}: cargo::core::compiler::fingerprint: fingerprint error for rand_chacha v0.3.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_chacha", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand_chacha-0.3.1/src/lib.rs", Edition2018) }
+   0.156024917s  INFO prepare_target{force=false package_id=rand_chacha v0.3.1 target="rand_chacha"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rand_chacha-5fc4db400dc03741/lib-rand_chacha`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+   0.156327542s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.20 target="ppv_lite86"}: cargo::core::compiler::fingerprint: fingerprint error for ppv-lite86 v0.2.20/Check { test: false }/TargetInner { ..: lib_target("ppv_lite86", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ppv-lite86-0.2.20/src/lib.rs", Edition2021) }
+   0.156333542s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.20 target="ppv_lite86"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ppv-lite86-a1227a944b7e7bfe/lib-ppv_lite86`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  17: cargo::ops::cargo_compile::compile_ws
+  18: cargo::ops::cargo_compile::compile_with_exec
+  19: cargo::ops::cargo_compile::compile
+  20: cargo::commands::check::exec
+  21: <cargo::cli::Exec>::exec
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+  26: _main
+   0.156593250s  INFO prepare_target{force=false package_id=rand_core v0.6.4 target="rand_core"}: cargo::core::compiler::fingerprint: fingerprint error for rand_core v0.6.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_core", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand_core-0.6.4/src/lib.rs", Edition2018) }
+   0.156599542s  INFO prepare_target{force=false package_id=rand_core v0.6.4 target="rand_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rand_core-daf5bd1053a18d20/lib-rand_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  17: cargo::ops::cargo_compile::compile_ws
+  18: cargo::ops::cargo_compile::compile_with_exec
+  19: cargo::ops::cargo_compile::compile
+  20: cargo::commands::check::exec
+  21: <cargo::cli::Exec>::exec
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+  26: _main
+   0.156841792s  INFO prepare_target{force=false package_id=digest v0.10.7 target="digest"}: cargo::core::compiler::fingerprint: fingerprint error for digest v0.10.7/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("digest", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/digest-0.10.7/src/lib.rs", Edition2018) }
+   0.156847792s  INFO prepare_target{force=false package_id=digest v0.10.7 target="digest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/digest-f91511bfa60ca2dd/lib-digest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+   0.157166583s  INFO prepare_target{force=false package_id=block-buffer v0.10.4 target="block_buffer"}: cargo::core::compiler::fingerprint: fingerprint error for block-buffer v0.10.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("block_buffer", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/block-buffer-0.10.4/src/lib.rs", Edition2018) }
+   0.157172667s  INFO prepare_target{force=false package_id=block-buffer v0.10.4 target="block_buffer"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/block-buffer-d31e8ef75dea459e/lib-block_buffer`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+   0.157412000s  INFO prepare_target{force=false package_id=generic-array v0.14.7 target="generic_array"}: cargo::core::compiler::fingerprint: fingerprint error for generic-array v0.14.7/Check { test: false }/TargetInner { ..: lib_target("generic_array", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/generic-array-0.14.7/src/lib.rs", Edition2015) }
+   0.157417792s  INFO prepare_target{force=false package_id=generic-array v0.14.7 target="generic_array"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/generic-array-142d580dcf0c30f9/lib-generic_array`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+   0.157967708s  INFO prepare_target{force=false package_id=typenum v1.17.0 target="typenum"}: cargo::core::compiler::fingerprint: fingerprint error for typenum v1.17.0/Check { test: false }/TargetInner { ..: lib_target("typenum", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typenum-1.17.0/src/lib.rs", Edition2018) }
+   0.157973333s  INFO prepare_target{force=false package_id=typenum v1.17.0 target="typenum"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/typenum-12eb7d0138884ef3/lib-typenum`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  17: cargo::ops::cargo_compile::compile_ws
+  18: cargo::ops::cargo_compile::compile_with_exec
+  19: cargo::ops::cargo_compile::compile
+  20: cargo::commands::check::exec
+  21: <cargo::cli::Exec>::exec
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+  26: _main
+   0.158163875s  INFO prepare_target{force=false package_id=crypto-common v0.1.6 target="crypto_common"}: cargo::core::compiler::fingerprint: fingerprint error for crypto-common v0.1.6/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("crypto_common", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.1.6/src/lib.rs", Edition2018) }
+   0.158171000s  INFO prepare_target{force=false package_id=crypto-common v0.1.6 target="crypto_common"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/crypto-common-82cb89032ed9ff86/lib-crypto_common`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+   0.158505792s  INFO prepare_target{force=false package_id=subtle v2.6.1 target="subtle"}: cargo::core::compiler::fingerprint: fingerprint error for subtle v2.6.1/Check { test: false }/TargetInner { ..: lib_target("subtle", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/subtle-2.6.1/src/lib.rs", Edition2018) }
+   0.158512958s  INFO prepare_target{force=false package_id=subtle v2.6.1 target="subtle"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/subtle-18fa1b7220cf74b3/lib-subtle`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+   0.158726667s  INFO prepare_target{force=false package_id=num-bigint v0.4.6 target="num_bigint"}: cargo::core::compiler::fingerprint: fingerprint error for num-bigint v0.4.6/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("num_bigint", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-bigint-0.4.6/src/lib.rs", Edition2021) }
+   0.158733583s  INFO prepare_target{force=false package_id=num-bigint v0.4.6 target="num_bigint"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/num-bigint-7d68e8b0ea157a63/lib-num_bigint`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+   0.159038917s  INFO prepare_target{force=false package_id=num-integer v0.1.46 target="num_integer"}: cargo::core::compiler::fingerprint: fingerprint error for num-integer v0.1.46/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("num_integer", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-integer-0.1.46/src/lib.rs", Edition2018) }
+   0.159046667s  INFO prepare_target{force=false package_id=num-integer v0.1.46 target="num_integer"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/num-integer-298be5b25a48af92/lib-num_integer`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+   0.159359208s  INFO prepare_target{force=false package_id=itertools v0.10.5 target="itertools"}: cargo::core::compiler::fingerprint: fingerprint error for itertools v0.10.5/Check { test: false }/TargetInner { name_inferred: true, tested: false, benched: false, ..: lib_target("itertools", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itertools-0.10.5/src/lib.rs", Edition2018) }
+   0.159365875s  INFO prepare_target{force=false package_id=itertools v0.10.5 target="itertools"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/itertools-fa235fb8dae7e3d5/lib-itertools`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.159624333s  INFO prepare_target{force=false package_id=either v1.13.0 target="either"}: cargo::core::compiler::fingerprint: fingerprint error for either v1.13.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("either", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.13.0/src/lib.rs", Edition2018) }
+   0.159630583s  INFO prepare_target{force=false package_id=either v1.13.0 target="either"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/either-4a4f67b353bff8ec/lib-either`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+   0.160201833s  INFO prepare_target{force=false package_id=zeroize v1.3.0 target="zeroize"}: cargo::core::compiler::fingerprint: fingerprint error for zeroize v1.3.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("zeroize", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zeroize-1.3.0/src/lib.rs", Edition2018) }
+   0.160207708s  INFO prepare_target{force=false package_id=zeroize v1.3.0 target="zeroize"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/zeroize-8d74b33ebdbc51e2/lib-zeroize`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.160485333s  INFO prepare_target{force=false package_id=ark-poly v0.4.2 target="ark_poly"}: cargo::core::compiler::fingerprint: fingerprint error for ark-poly v0.4.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ark_poly", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ark-poly-0.4.2/src/lib.rs", Edition2021) }
+   0.160491250s  INFO prepare_target{force=false package_id=ark-poly v0.4.2 target="ark_poly"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ark-poly-e49171a1751a5392/lib-ark_poly`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.160916875s  INFO prepare_target{force=false package_id=bitflags v2.6.0 target="bitflags"}: cargo::core::compiler::fingerprint: fingerprint error for bitflags v2.6.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("bitflags", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.6.0/src/lib.rs", Edition2021) }
+   0.160924958s  INFO prepare_target{force=false package_id=bitflags v2.6.0 target="bitflags"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/bitflags-b204bc994afc18bf/lib-bitflags`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.161141292s  INFO prepare_target{force=false package_id=blake3 v1.5.5 target="blake3"}: cargo::core::compiler::fingerprint: fingerprint error for blake3 v1.5.5/Check { test: false }/TargetInner { ..: lib_target("blake3", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake3-1.5.5/src/lib.rs", Edition2021) }
+   0.161146875s  INFO prepare_target{force=false package_id=blake3 v1.5.5 target="blake3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/blake3-e493d37212356c3d/lib-blake3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.161517833s  INFO prepare_target{force=false package_id=arrayvec v0.7.6 target="arrayvec"}: cargo::core::compiler::fingerprint: fingerprint error for arrayvec v0.7.6/Check { test: false }/TargetInner { ..: lib_target("arrayvec", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrayvec-0.7.6/src/lib.rs", Edition2018) }
+   0.161523417s  INFO prepare_target{force=false package_id=arrayvec v0.7.6 target="arrayvec"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/arrayvec-c6f5024391398c8d/lib-arrayvec`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.162875875s  INFO prepare_target{force=false package_id=constant_time_eq v0.3.1 target="constant_time_eq"}: cargo::core::compiler::fingerprint: fingerprint error for constant_time_eq v0.3.1/Check { test: false }/TargetInner { ..: lib_target("constant_time_eq", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/constant_time_eq-0.3.1/src/lib.rs", Edition2021) }
+   0.162881750s  INFO prepare_target{force=false package_id=constant_time_eq v0.3.1 target="constant_time_eq"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/constant_time_eq-ff61e26a27f94a16/lib-constant_time_eq`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.163055000s  INFO prepare_target{force=false package_id=borsh v0.9.3 target="borsh"}: cargo::core::compiler::fingerprint: fingerprint error for borsh v0.9.3/Check { test: false }/TargetInner { ..: lib_target("borsh", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/lib.rs", Edition2018) }
+   0.163060750s  INFO prepare_target{force=false package_id=borsh v0.9.3 target="borsh"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/borsh-31e0263f5b3d3605/lib-borsh`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.163458958s  INFO prepare_target{force=false package_id=hashbrown v0.11.2 target="hashbrown"}: cargo::core::compiler::fingerprint: fingerprint error for hashbrown v0.11.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hashbrown", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.11.2/src/lib.rs", Edition2018) }
+   0.163465000s  INFO prepare_target{force=false package_id=hashbrown v0.11.2 target="hashbrown"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/hashbrown-b7158a1d256a7bb6/lib-hashbrown`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.163680583s  INFO prepare_target{force=false package_id=ahash v0.7.8 target="ahash"}: cargo::core::compiler::fingerprint: fingerprint error for ahash v0.7.8/Check { test: false }/TargetInner { ..: lib_target("ahash", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ahash-0.7.8/src/lib.rs", Edition2018) }
+   0.163685833s  INFO prepare_target{force=false package_id=ahash v0.7.8 target="ahash"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ahash-5dc8d9b4ce8dff0f/lib-ahash`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.164149625s  INFO prepare_target{force=false package_id=borsh v1.5.3 target="borsh"}: cargo::core::compiler::fingerprint: fingerprint error for borsh v1.5.3/Check { test: false }/TargetInner { ..: lib_target("borsh", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-1.5.3/src/lib.rs", Edition2018) }
+   0.164155625s  INFO prepare_target{force=false package_id=borsh v1.5.3 target="borsh"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/borsh-0fbe3c301c587f9f/lib-borsh`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.165808750s  INFO prepare_target{force=false package_id=bs58 v0.4.0 target="bs58"}: cargo::core::compiler::fingerprint: fingerprint error for bs58 v0.4.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("bs58", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bs58-0.4.0/src/lib.rs", Edition2018) }
+   0.165815792s  INFO prepare_target{force=false package_id=bs58 v0.4.0 target="bs58"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/bs58-972dfada7c1c7022/lib-bs58`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.166007750s  INFO prepare_target{force=false package_id=bv v0.11.1 target="bv"}: cargo::core::compiler::fingerprint: fingerprint error for bv v0.11.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("bv", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bv-0.11.1/src/lib.rs", Edition2015) }
+   0.166013792s  INFO prepare_target{force=false package_id=bv v0.11.1 target="bv"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/bv-c8438418cd8de1e7/lib-bv`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.166549167s  INFO prepare_target{force=false package_id=curve25519-dalek v3.2.1 target="curve25519_dalek"}: cargo::core::compiler::fingerprint: fingerprint error for curve25519-dalek v3.2.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("curve25519_dalek", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curve25519-dalek-3.2.1/src/lib.rs", Edition2015) }
+   0.166556417s  INFO prepare_target{force=false package_id=curve25519-dalek v3.2.1 target="curve25519_dalek"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/curve25519-dalek-1151392ad14590ee/lib-curve25519_dalek`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.166975208s  INFO prepare_target{force=false package_id=digest v0.9.0 target="digest"}: cargo::core::compiler::fingerprint: fingerprint error for digest v0.9.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("digest", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/digest-0.9.0/src/lib.rs", Edition2018) }
+   0.166981375s  INFO prepare_target{force=false package_id=digest v0.9.0 target="digest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/digest-40a93fe93354349d/lib-digest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.167217000s  INFO prepare_target{force=false package_id=rand_core v0.5.1 target="rand_core"}: cargo::core::compiler::fingerprint: fingerprint error for rand_core v0.5.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_core", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand_core-0.5.1/src/lib.rs", Edition2018) }
+   0.167224667s  INFO prepare_target{force=false package_id=rand_core v0.5.1 target="rand_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rand_core-78ab7f30c4f9604b/lib-rand_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.167463708s  INFO prepare_target{force=false package_id=getrandom v0.1.16 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.1.16/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("getrandom", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.1.16/src/lib.rs", Edition2018) }
+   0.167469250s  INFO prepare_target{force=false package_id=getrandom v0.1.16 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/getrandom-51b865a9534cd36f/lib-getrandom`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.167993333s  INFO prepare_target{force=false package_id=lazy_static v1.5.0 target="lazy_static"}: cargo::core::compiler::fingerprint: fingerprint error for lazy_static v1.5.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("lazy_static", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lazy_static-1.5.0/src/lib.rs", Edition2015) }
+   0.168003375s  INFO prepare_target{force=false package_id=lazy_static v1.5.0 target="lazy_static"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/lazy_static-d917dffe118813fb/lib-lazy_static`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.168202042s  INFO prepare_target{force=false package_id=libsecp256k1 v0.6.0 target="libsecp256k1"}: cargo::core::compiler::fingerprint: fingerprint error for libsecp256k1 v0.6.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("libsecp256k1", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsecp256k1-0.6.0/src/lib.rs", Edition2018) }
+   0.168208125s  INFO prepare_target{force=false package_id=libsecp256k1 v0.6.0 target="libsecp256k1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/libsecp256k1-bc46ef318cc7c193/lib-libsecp256k1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.168761333s  INFO prepare_target{force=false package_id=base64 v0.12.3 target="base64"}: cargo::core::compiler::fingerprint: fingerprint error for base64 v0.12.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("base64", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/base64-0.12.3/src/lib.rs", Edition2018) }
+   0.168767500s  INFO prepare_target{force=false package_id=base64 v0.12.3 target="base64"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/base64-8e41bf9f48ac1064/lib-base64`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.169029875s  INFO prepare_target{force=false package_id=hmac-drbg v0.3.0 target="hmac_drbg"}: cargo::core::compiler::fingerprint: fingerprint error for hmac-drbg v0.3.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hmac_drbg", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hmac-drbg-0.3.0/src/lib.rs", Edition2018) }
+   0.169037917s  INFO prepare_target{force=false package_id=hmac-drbg v0.3.0 target="hmac_drbg"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/hmac-drbg-97541491dc860796/lib-hmac_drbg`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.169378500s  INFO prepare_target{force=false package_id=hmac v0.8.1 target="hmac"}: cargo::core::compiler::fingerprint: fingerprint error for hmac v0.8.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hmac", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hmac-0.8.1/src/lib.rs", Edition2018) }
+   0.169383250s  INFO prepare_target{force=false package_id=hmac v0.8.1 target="hmac"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/hmac-bf3a97530a047c92/lib-hmac`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.169720250s  INFO prepare_target{force=false package_id=crypto-mac v0.8.0 target="crypto_mac"}: cargo::core::compiler::fingerprint: fingerprint error for crypto-mac v0.8.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("crypto_mac", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-mac-0.8.0/src/lib.rs", Edition2018) }
+   0.169729000s  INFO prepare_target{force=false package_id=crypto-mac v0.8.0 target="crypto_mac"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/crypto-mac-38d7f72772401b74/lib-crypto_mac`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.170880292s  INFO prepare_target{force=false package_id=libsecp256k1-core v0.2.2 target="libsecp256k1_core"}: cargo::core::compiler::fingerprint: fingerprint error for libsecp256k1-core v0.2.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("libsecp256k1_core", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsecp256k1-core-0.2.2/src/lib.rs", Edition2018) }
+   0.170889875s  INFO prepare_target{force=false package_id=libsecp256k1-core v0.2.2 target="libsecp256k1_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/libsecp256k1-core-ed00722fc52dd1b7/lib-libsecp256k1_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.171201792s  INFO prepare_target{force=false package_id=crunchy v0.2.2 target="crunchy"}: cargo::core::compiler::fingerprint: fingerprint error for crunchy v0.2.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("crunchy", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crunchy-0.2.2/src/lib.rs", Edition2015) }
+   0.171207292s  INFO prepare_target{force=false package_id=crunchy v0.2.2 target="crunchy"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/crunchy-ce3ce49da3194ed3/lib-crunchy`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.171388250s  INFO prepare_target{force=false package_id=rand v0.7.3 target="rand"}: cargo::core::compiler::fingerprint: fingerprint error for rand v0.7.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.7.3/src/lib.rs", Edition2018) }
+   0.171393542s  INFO prepare_target{force=false package_id=rand v0.7.3 target="rand"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rand-0b6edf1e65ef9b60/lib-rand`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.171724833s  INFO prepare_target{force=false package_id=rand_chacha v0.2.2 target="rand_chacha"}: cargo::core::compiler::fingerprint: fingerprint error for rand_chacha v0.2.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_chacha", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand_chacha-0.2.2/src/lib.rs", Edition2018) }
+   0.171730333s  INFO prepare_target{force=false package_id=rand_chacha v0.2.2 target="rand_chacha"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rand_chacha-8d8ebd66e62db2ef/lib-rand_chacha`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.171988708s  INFO prepare_target{force=false package_id=sha2 v0.9.9 target="sha2"}: cargo::core::compiler::fingerprint: fingerprint error for sha2 v0.9.9/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sha2", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sha2-0.9.9/src/lib.rs", Edition2018) }
+   0.171993958s  INFO prepare_target{force=false package_id=sha2 v0.9.9 target="sha2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/sha2-2bcb528c79b05937/lib-sha2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.172355333s  INFO prepare_target{force=false package_id=block-buffer v0.9.0 target="block_buffer"}: cargo::core::compiler::fingerprint: fingerprint error for block-buffer v0.9.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("block_buffer", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/block-buffer-0.9.0/src/lib.rs", Edition2018) }
+   0.172361042s  INFO prepare_target{force=false package_id=block-buffer v0.9.0 target="block_buffer"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/block-buffer-226ddba40904a802/lib-block_buffer`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.172582667s  INFO prepare_target{force=false package_id=cpufeatures v0.2.16 target="cpufeatures"}: cargo::core::compiler::fingerprint: fingerprint error for cpufeatures v0.2.16/Check { test: false }/TargetInner { ..: lib_target("cpufeatures", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cpufeatures-0.2.16/src/lib.rs", Edition2018) }
+   0.172590208s  INFO prepare_target{force=false package_id=cpufeatures v0.2.16 target="cpufeatures"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/cpufeatures-83eaa0538eed8736/lib-cpufeatures`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.172795750s  INFO prepare_target{force=false package_id=opaque-debug v0.3.1 target="opaque_debug"}: cargo::core::compiler::fingerprint: fingerprint error for opaque-debug v0.3.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("opaque_debug", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opaque-debug-0.3.1/src/lib.rs", Edition2018) }
+   0.172801083s  INFO prepare_target{force=false package_id=opaque-debug v0.3.1 target="opaque_debug"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/opaque-debug-1cdbaa473e9ddb9e/lib-opaque_debug`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.172990542s  INFO prepare_target{force=false package_id=light-poseidon v0.2.0 target="light_poseidon"}: cargo::core::compiler::fingerprint: fingerprint error for light-poseidon v0.2.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("light_poseidon", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/light-poseidon-0.2.0/src/lib.rs", Edition2021) }
+   0.172996333s  INFO prepare_target{force=false package_id=light-poseidon v0.2.0 target="light_poseidon"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/light-poseidon-e6eed20a49d3d0c4/lib-light_poseidon`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.173362333s  INFO prepare_target{force=false package_id=thiserror v1.0.69 target="thiserror"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v1.0.69/Check { test: false }/TargetInner { ..: lib_target("thiserror", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-1.0.69/src/lib.rs", Edition2021) }
+   0.173367917s  INFO prepare_target{force=false package_id=thiserror v1.0.69 target="thiserror"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/thiserror-3f7c3becd2204a81/lib-thiserror`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.173590000s  INFO prepare_target{force=false package_id=log v0.4.22 target="log"}: cargo::core::compiler::fingerprint: fingerprint error for log v0.4.22/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("log", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.22/src/lib.rs", Edition2021) }
+   0.173595500s  INFO prepare_target{force=false package_id=log v0.4.22 target="log"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/log-c69bdd9101e7e969/lib-log`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.173763375s  INFO prepare_target{force=false package_id=memoffset v0.9.1 target="memoffset"}: cargo::core::compiler::fingerprint: fingerprint error for memoffset v0.9.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("memoffset", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memoffset-0.9.1/src/lib.rs", Edition2015) }
+   0.173768750s  INFO prepare_target{force=false package_id=memoffset v0.9.1 target="memoffset"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/memoffset-bfd31e1720f1672b/lib-memoffset`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.174552375s  INFO prepare_target{force=false package_id=serde_bytes v0.11.15 target="serde_bytes"}: cargo::core::compiler::fingerprint: fingerprint error for serde_bytes v0.11.15/Check { test: false }/TargetInner { doc_scrape_examples: Disabled, ..: lib_target("serde_bytes", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_bytes-0.11.15/src/lib.rs", Edition2018) }
+   0.174558917s  INFO prepare_target{force=false package_id=serde_bytes v0.11.15 target="serde_bytes"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/serde_bytes-3c3719d5081a8d7b/lib-serde_bytes`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.174808833s  INFO prepare_target{force=false package_id=serde_json v1.0.133 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.133/Check { test: false }/TargetInner { doc_scrape_examples: Disabled, ..: lib_target("serde_json", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.133/src/lib.rs", Edition2021) }
+   0.174814750s  INFO prepare_target{force=false package_id=serde_json v1.0.133 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/serde_json-7ffe1152fa419c2a/lib-serde_json`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.175151208s  INFO prepare_target{force=false package_id=itoa v1.0.14 target="itoa"}: cargo::core::compiler::fingerprint: fingerprint error for itoa v1.0.14/Check { test: false }/TargetInner { doc_scrape_examples: Disabled, ..: lib_target("itoa", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.14/src/lib.rs", Edition2018) }
+   0.175156792s  INFO prepare_target{force=false package_id=itoa v1.0.14 target="itoa"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/itoa-c6ab09374741831f/lib-itoa`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.175340417s  INFO prepare_target{force=false package_id=memchr v2.7.4 target="memchr"}: cargo::core::compiler::fingerprint: fingerprint error for memchr v2.7.4/Check { test: false }/TargetInner { benched: false, ..: lib_target("memchr", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memchr-2.7.4/src/lib.rs", Edition2021) }
+   0.175346083s  INFO prepare_target{force=false package_id=memchr v2.7.4 target="memchr"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/memchr-60024c61581cb655/lib-memchr`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.175538083s  INFO prepare_target{force=false package_id=ryu v1.0.18 target="ryu"}: cargo::core::compiler::fingerprint: fingerprint error for ryu v1.0.18/Check { test: false }/TargetInner { doc_scrape_examples: Disabled, ..: lib_target("ryu", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.18/src/lib.rs", Edition2018) }
+   0.175543875s  INFO prepare_target{force=false package_id=ryu v1.0.18 target="ryu"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/ryu-cebc7bb6760dc1af/lib-ryu`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.175722375s  INFO prepare_target{force=false package_id=sha2 v0.10.8 target="sha2"}: cargo::core::compiler::fingerprint: fingerprint error for sha2 v0.10.8/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sha2", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sha2-0.10.8/src/lib.rs", Edition2018) }
+   0.175727792s  INFO prepare_target{force=false package_id=sha2 v0.10.8 target="sha2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/sha2-4e71b7b9a56c0164/lib-sha2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.176022250s  INFO prepare_target{force=false package_id=sha3 v0.10.8 target="sha3"}: cargo::core::compiler::fingerprint: fingerprint error for sha3 v0.10.8/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sha3", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sha3-0.10.8/src/lib.rs", Edition2018) }
+   0.176027375s  INFO prepare_target{force=false package_id=sha3 v0.10.8 target="sha3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/sha3-7b3c21d0247c01e7/lib-sha3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.176289542s  INFO prepare_target{force=false package_id=keccak v0.1.5 target="keccak"}: cargo::core::compiler::fingerprint: fingerprint error for keccak v0.1.5/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("keccak", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/keccak-0.1.5/src/lib.rs", Edition2018) }
+   0.176295042s  INFO prepare_target{force=false package_id=keccak v0.1.5 target="keccak"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/keccak-79d00f6c79b8f456/lib-keccak`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.176550625s  INFO prepare_target{force=false package_id=solana-frozen-abi v1.18.26 target="solana_frozen_abi"}: cargo::core::compiler::fingerprint: fingerprint error for solana-frozen-abi v1.18.26/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("solana_frozen_abi", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-frozen-abi-1.18.26/src/lib.rs", Edition2021) }
+   0.176556250s  INFO prepare_target{force=false package_id=solana-frozen-abi v1.18.26 target="solana_frozen_abi"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/solana-frozen-abi-e38f41f6cc5bd8d7/lib-solana_frozen_abi`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.177343667s  INFO prepare_target{force=false package_id=im v15.1.0 target="im"}: cargo::core::compiler::fingerprint: fingerprint error for im v15.1.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("im", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/im-15.1.0/src/lib.rs", Edition2018) }
+   0.177349042s  INFO prepare_target{force=false package_id=im v15.1.0 target="im"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/im-ae591f8cbba2759d/lib-im`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.177792958s  INFO prepare_target{force=false package_id=bitmaps v2.1.0 target="bitmaps"}: cargo::core::compiler::fingerprint: fingerprint error for bitmaps v2.1.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("bitmaps", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitmaps-2.1.0/src/lib.rs", Edition2018) }
+   0.177798458s  INFO prepare_target{force=false package_id=bitmaps v2.1.0 target="bitmaps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/bitmaps-e00eccd02d8c32d8/lib-bitmaps`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.178260000s  INFO prepare_target{force=false package_id=rand_xoshiro v0.6.0 target="rand_xoshiro"}: cargo::core::compiler::fingerprint: fingerprint error for rand_xoshiro v0.6.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_xoshiro", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand_xoshiro-0.6.0/src/lib.rs", Edition2018) }
+   0.178266917s  INFO prepare_target{force=false package_id=rand_xoshiro v0.6.0 target="rand_xoshiro"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rand_xoshiro-9a9e8aa073f15eeb/lib-rand_xoshiro`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.178506792s  INFO prepare_target{force=false package_id=rayon v1.10.0 target="rayon"}: cargo::core::compiler::fingerprint: fingerprint error for rayon v1.10.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rayon", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rayon-1.10.0/src/lib.rs", Edition2021) }
+   0.178513125s  INFO prepare_target{force=false package_id=rayon v1.10.0 target="rayon"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rayon-20d32af754446f39/lib-rayon`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.178782333s  INFO prepare_target{force=false package_id=rayon-core v1.12.1 target="rayon_core"}: cargo::core::compiler::fingerprint: fingerprint error for rayon-core v1.12.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rayon_core", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rayon-core-1.12.1/src/lib.rs", Edition2021) }
+   0.178787958s  INFO prepare_target{force=false package_id=rayon-core v1.12.1 target="rayon_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rayon-core-81befc8a10c02c55/lib-rayon_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.179058167s  INFO prepare_target{force=false package_id=crossbeam-deque v0.8.6 target="crossbeam_deque"}: cargo::core::compiler::fingerprint: fingerprint error for crossbeam-deque v0.8.6/Check { test: false }/TargetInner { ..: lib_target("crossbeam_deque", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crossbeam-deque-0.8.6/src/lib.rs", Edition2021) }
+   0.179064167s  INFO prepare_target{force=false package_id=crossbeam-deque v0.8.6 target="crossbeam_deque"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/crossbeam-deque-827d0af7d9b2d291/lib-crossbeam_deque`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+   0.179336833s  INFO prepare_target{force=false package_id=crossbeam-epoch v0.9.18 target="crossbeam_epoch"}: cargo::core::compiler::fingerprint: fingerprint error for crossbeam-epoch v0.9.18/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("crossbeam_epoch", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crossbeam-epoch-0.9.18/src/lib.rs", Edition2021) }
+   0.179342458s  INFO prepare_target{force=false package_id=crossbeam-epoch v0.9.18 target="crossbeam_epoch"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/crossbeam-epoch-efd130a5e6ec3fab/lib-crossbeam_epoch`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+   0.179566542s  INFO prepare_target{force=false package_id=crossbeam-utils v0.8.21 target="crossbeam_utils"}: cargo::core::compiler::fingerprint: fingerprint error for crossbeam-utils v0.8.21/Check { test: false }/TargetInner { ..: lib_target("crossbeam_utils", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crossbeam-utils-0.8.21/src/lib.rs", Edition2021) }
+   0.179572167s  INFO prepare_target{force=false package_id=crossbeam-utils v0.8.21 target="crossbeam_utils"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/crossbeam-utils-14270168fa33b15f/lib-crossbeam_utils`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+   0.180233792s  INFO prepare_target{force=false package_id=sized-chunks v0.6.5 target="sized_chunks"}: cargo::core::compiler::fingerprint: fingerprint error for sized-chunks v0.6.5/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sized_chunks", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sized-chunks-0.6.5/src/lib.rs", Edition2018) }
+   0.180239625s  INFO prepare_target{force=false package_id=sized-chunks v0.6.5 target="sized_chunks"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/sized-chunks-09d9a32433cee231/lib-sized_chunks`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.180495000s  INFO prepare_target{force=false package_id=memmap2 v0.5.10 target="memmap2"}: cargo::core::compiler::fingerprint: fingerprint error for memmap2 v0.5.10/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("memmap2", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memmap2-0.5.10/src/lib.rs", Edition2018) }
+   0.180500667s  INFO prepare_target{force=false package_id=memmap2 v0.5.10 target="memmap2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/memmap2-86d0889aee659065/lib-memmap2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.182261417s  INFO prepare_target{force=false package_id=tiny-bip39 v0.8.2 target="bip39"}: cargo::core::compiler::fingerprint: fingerprint error for tiny-bip39 v0.8.2/Check { test: false }/TargetInner { ..: lib_target("bip39", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tiny-bip39-0.8.2/src/lib.rs", Edition2018) }
+   0.182267042s  INFO prepare_target{force=false package_id=tiny-bip39 v0.8.2 target="bip39"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/tiny-bip39-01870372deeeacfb/lib-bip39`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.182820000s  INFO prepare_target{force=false package_id=anyhow v1.0.94 target="anyhow"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.94/Check { test: false }/TargetInner { doc_scrape_examples: Disabled, ..: lib_target("anyhow", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.94/src/lib.rs", Edition2018) }
+   0.182826250s  INFO prepare_target{force=false package_id=anyhow v1.0.94 target="anyhow"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/anyhow-cdee67037a5898c2/lib-anyhow`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.183004792s  INFO prepare_target{force=false package_id=pbkdf2 v0.4.0 target="pbkdf2"}: cargo::core::compiler::fingerprint: fingerprint error for pbkdf2 v0.4.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pbkdf2", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pbkdf2-0.4.0/src/lib.rs", Edition2018) }
+   0.183010250s  INFO prepare_target{force=false package_id=pbkdf2 v0.4.0 target="pbkdf2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/pbkdf2-3e8c327ddd2abd37/lib-pbkdf2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.183249875s  INFO prepare_target{force=false package_id=rustc-hash v1.1.0 target="rustc_hash"}: cargo::core::compiler::fingerprint: fingerprint error for rustc-hash v1.1.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rustc_hash", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustc-hash-1.1.0/src/lib.rs", Edition2015) }
+   0.183255375s  INFO prepare_target{force=false package_id=rustc-hash v1.1.0 target="rustc_hash"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/rustc-hash-caf7f4baec760e02/lib-rustc_hash`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.183449750s  INFO prepare_target{force=false package_id=unicode-normalization v0.1.24 target="unicode_normalization"}: cargo::core::compiler::fingerprint: fingerprint error for unicode-normalization v0.1.24/Check { test: false }/TargetInner { ..: lib_target("unicode_normalization", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-normalization-0.1.24/src/lib.rs", Edition2018) }
+   0.183455125s  INFO prepare_target{force=false package_id=unicode-normalization v0.1.24 target="unicode_normalization"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/unicode-normalization-044aef0c9fc471cf/lib-unicode_normalization`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.183664667s  INFO prepare_target{force=false package_id=tinyvec v1.8.0 target="tinyvec"}: cargo::core::compiler::fingerprint: fingerprint error for tinyvec v1.8.0/Check { test: false }/TargetInner { ..: lib_target("tinyvec", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinyvec-1.8.0/src/lib.rs", Edition2018) }
+   0.183669875s  INFO prepare_target{force=false package_id=tinyvec v1.8.0 target="tinyvec"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/tinyvec-d0c8e9f5cb48f808/lib-tinyvec`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.183890583s  INFO prepare_target{force=false package_id=tinyvec_macros v0.1.1 target="tinyvec_macros"}: cargo::core::compiler::fingerprint: fingerprint error for tinyvec_macros v0.1.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("tinyvec_macros", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinyvec_macros-0.1.1/src/lib.rs", Edition2018) }
+   0.183899875s  INFO prepare_target{force=false package_id=tinyvec_macros v0.1.1 target="tinyvec_macros"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/tinyvec_macros-0980911868cbaa57/lib-tinyvec_macros`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.184071625s  INFO prepare_target{force=false package_id=wasm-bindgen v0.2.99 target="wasm_bindgen"}: cargo::core::compiler::fingerprint: fingerprint error for wasm-bindgen v0.2.99/Check { test: false }/TargetInner { tested: false, ..: lib_target("wasm_bindgen", ["lib"], "/Users/thatsmeadarsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasm-bindgen-0.2.99/src/lib.rs", Edition2021) }
+   0.184077167s  INFO prepare_target{force=false package_id=wasm-bindgen v0.2.99 target="wasm_bindgen"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/wasm-bindgen-78135c439c64b005/lib-wasm_bindgen`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.185605000s  INFO prepare_target{force=false package_id=contract v0.1.0 (/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract) target="contract"}: cargo::core::compiler::fingerprint: fingerprint error for contract v0.1.0 (/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract)/Check { test: true }/TargetInner { ..: lib_target("contract", ["cdylib", "lib"], "/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract/src/lib.rs", Edition2021) }
+   0.185614833s  INFO prepare_target{force=false package_id=contract v0.1.0 (/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract) target="contract"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/target/debug/.fingerprint/contract-806cf34978775156/test-lib-contract`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking cfg-if v1.0.0
+    Checking libc v0.2.169
+    Checking typenum v1.17.0
+    Checking subtle v2.6.1
+    Checking byteorder v1.5.0
+    Checking serde v1.0.216
+    Checking once_cell v1.20.2
+    Checking num-traits v0.2.19
+    Checking either v1.13.0
+    Checking zeroize v1.3.0
+    Checking zerocopy v0.7.35
+    Checking crossbeam-utils v0.8.21
+    Checking thiserror v1.0.69
+    Checking itertools v0.10.5
+    Checking opaque-debug v0.3.1
+    Checking tinyvec_macros v0.1.1
+    Checking tinyvec v1.8.0
+    Checking crossbeam-epoch v0.9.18
+    Checking bitmaps v2.1.0
+    Checking num-integer v0.1.46
+    Checking crossbeam-deque v0.8.6
+    Checking ppv-lite86 v0.2.20
+    Checking getrandom v0.2.15
+    Checking cpufeatures v0.2.16
+    Checking num-bigint v0.4.6
+    Checking getrandom v0.1.16
+    Checking rand_core v0.6.4
+    Checking ahash v0.8.11
+    Checking rand_core v0.5.1
+    Checking rand_chacha v0.3.1
+    Checking hashbrown v0.13.2
+    Checking rayon-core v1.12.1
+    Checking rand_chacha v0.2.2
+    Checking sized-chunks v0.6.5
+    Checking rand_xoshiro v0.6.0
+    Checking rand v0.8.5
+    Checking rand v0.7.3
+    Checking ahash v0.7.8
+    Checking crunchy v0.2.2
+    Checking rayon v1.10.0
+    Checking arrayref v0.3.9
+    Checking hashbrown v0.11.2
+    Checking unicode-normalization v0.1.24
+    Checking keccak v0.1.5
+    Checking memmap2 v0.5.10
+    Checking anyhow v1.0.94
+    Checking ark-std v0.4.0
+    Checking rustc-hash v1.1.0
+    Checking bs58 v0.4.0
+    Checking itoa v1.0.14
+    Checking log v0.4.22
+    Checking memchr v2.7.4
+    Checking lazy_static v1.5.0
+    Checking arrayvec v0.7.6
+    Checking ryu v1.0.18
+    Checking constant_time_eq v0.3.1
+    Checking base64 v0.12.3
+    Checking bytemuck v1.20.0
+    Checking generic-array v0.14.7
+    Checking serde_bytes v0.11.15
+    Checking bv v0.11.1
+    Checking bitflags v2.6.0
+    Checking bincode v1.3.3
+    Checking borsh v0.9.3
+    Checking borsh v1.5.3
+    Checking wasm-bindgen v0.2.99
+    Checking serde_json v1.0.133
+    Checking borsh v0.10.4
+    Checking crypto-common v0.1.6
+    Checking block-buffer v0.10.4
+    Checking digest v0.9.0
+    Checking crypto-mac v0.8.0
+    Checking block-buffer v0.9.0
+    Checking digest v0.10.7
+    Checking libsecp256k1-core v0.2.2
+    Checking curve25519-dalek v3.2.1
+    Checking hmac v0.8.1
+    Checking pbkdf2 v0.4.0
+    Checking sha2 v0.9.9
+    Checking memoffset v0.9.1
+    Checking hmac-drbg v0.3.0
+    Checking base64 v0.21.7
+    Checking ark-serialize v0.4.2
+    Checking sha2 v0.10.8
+    Checking blake3 v1.5.5
+    Checking tiny-bip39 v0.8.2
+    Checking sha3 v0.10.8
+    Checking ark-ff v0.4.2
+    Checking im v15.1.0
+    Checking libsecp256k1 v0.6.0
+    Checking solana-frozen-abi v1.18.26
+    Checking ark-poly v0.4.2
+    Checking ark-ec v0.4.2
+    Checking ark-bn254 v0.4.0
+    Checking light-poseidon v0.2.0
+    Checking solana-program v1.18.26
+    Checking anchor-lang v0.30.1
+    Checking contract v0.1.0 (/Users/thatsmeadarsh/myprograms/vity-toolkit/contract/programs/contract)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.59s

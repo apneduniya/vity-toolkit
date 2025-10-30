@@ -1,0 +1,23 @@
+import { VityToolKit, Action } from "vity-toolkit";
+
+const P = (globalThis as any).process;
+
+const run = async () => {
+    const toolKit = new VityToolKit({
+        userPrivateKey: P?.env?.SOLANA_PRIVATE_KEY,
+        appPrivateKey: P?.env?.SOLANA_PRIVATE_KEY,
+    });
+
+    const result = await toolKit.executeAction({
+        action: Action.PEXELS_SEARCH_PHOTOS,
+        inputParams: {
+            query: "tropical beach",
+            page: 1,
+            perPage: 10,
+        },
+    });
+
+    console.log(result);
+};
+
+run().catch(console.error);

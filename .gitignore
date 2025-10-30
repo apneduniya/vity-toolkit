@@ -176,3 +176,7 @@ dist
 
 # session stores
 lit_storage.db/
+
+
+# custom
+external-tools/*

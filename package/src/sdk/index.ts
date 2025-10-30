@@ -169,7 +169,7 @@ export class VityToolKit {
         const contract = new Contract(appPrivateKey);
         const dataURI = await contract.getUserAuth(app, new PublicKey(appPublicKey), new PublicKey(userPublicKey));
         if (!dataURI) { // check if smart contract failed to fetch data
-            logger.info(`${app.toUpperCase()} app is not connected`);
+            logger.debug(`${app.toUpperCase()} app is not connected`);
             return integrationMessage({
                 success: false,
                 data: "Seems like app is not connected",

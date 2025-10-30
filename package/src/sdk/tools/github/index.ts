@@ -37,7 +37,6 @@ export class GitHubTool {
     }
 
     async createClient(): Promise<string> {
-        // get auth data (via integration and connection)
         const authData = await this.getAuthData();
         return authData.GITHUB_PAT;
     }

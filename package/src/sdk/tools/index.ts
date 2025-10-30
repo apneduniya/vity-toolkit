@@ -76,6 +76,21 @@ import { githubCreateOrUpdateFileTool } from "./github/actions/create-or-update-
 import { githubCreateIssueTool } from "./github/actions/create-issue";
 import { githubCreatePullRequestTool } from "./github/actions/create-pull-request";
 
+import { StampchainTool } from "./stampchain";
+import { stampchainGetStampTool } from "./stampchain/actions/get-stamp";
+import { stampchainSearchStampsTool } from "./stampchain/actions/search-stamps";
+import { stampchainGetRecentStampsTool } from "./stampchain/actions/get-recent-stamps";
+import { stampchainGetRecentSalesTool } from "./stampchain/actions/get-recent-sales";
+import { stampchainGetMarketDataTool } from "./stampchain/actions/get-market-data";
+import { stampchainGetStampMarketDataTool } from "./stampchain/actions/get-stamp-market-data";
+import { PexelsTool } from "./pexels";
+import { pexelsSearchPhotosTool } from "./pexels/actions/search-photos";
+import { pexelsSearchVideosTool } from "./pexels/actions/search-videos";
+import { pexelsGetPhotoTool } from "./pexels/actions/get-photo";
+import { pexelsGetVideoTool } from "./pexels/actions/get-video";
+import { pexelsGetCuratedPhotosTool } from "./pexels/actions/get-curated-photos";
+import { pexelsGetPopularVideosTool } from "./pexels/actions/get-popular-videos";
+
 
 //  A P P S
 
@@ -86,6 +101,8 @@ export enum App {
     REDDIT = 'reddit',
     GIBWORK = 'gibwork',
     GITHUB = 'github',
+    STAMPCHAIN = 'stampchain',
+    PEXELS = 'pexels',
 }
 
 export const appsMap = {
@@ -95,6 +112,8 @@ export const appsMap = {
     [App.REDDIT]: RedditTool,
     [App.GIBWORK]: GibworkTool,
     [App.GITHUB]: GitHubTool,
+    [App.STAMPCHAIN]: StampchainTool,
+    [App.PEXELS]: PexelsTool,
 }
 
 // Integrable apps
@@ -108,7 +127,7 @@ export type IntegrableApps = Extract<
 
 export type ConnectableApps = Extract<
     App,
-    App.TWITTER | App.REDDIT | App.GITHUB
+    App.TWITTER | App.REDDIT | App.GITHUB | App.PEXELS
 >;
 
 
@@ -186,6 +205,20 @@ export enum Action {
     GITHUB_CREATE_OR_UPDATE_FILE,
     GITHUB_CREATE_ISSUE,
     GITHUB_CREATE_PULL_REQUEST,
+
+    STAMPCHAIN_GET_STAMP,
+    STAMPCHAIN_SEARCH_STAMPS,
+    STAMPCHAIN_GET_RECENT_STAMPS,
+    STAMPCHAIN_GET_RECENT_SALES,
+    STAMPCHAIN_GET_MARKET_DATA,
+    STAMPCHAIN_GET_STAMP_MARKET_DATA,
+
+    PEXELS_SEARCH_PHOTOS,
+    PEXELS_SEARCH_VIDEOS,
+    PEXELS_GET_PHOTO,
+    PEXELS_GET_VIDEO,
+    PEXELS_GET_CURATED_PHOTOS,
+    PEXELS_GET_POPULAR_VIDEOS,
 }
 
 export const actionsMap = {
@@ -260,6 +293,20 @@ export const actionsMap = {
     [Action.GITHUB_CREATE_OR_UPDATE_FILE]: githubCreateOrUpdateFileTool,
     [Action.GITHUB_CREATE_ISSUE]: githubCreateIssueTool,
     [Action.GITHUB_CREATE_PULL_REQUEST]: githubCreatePullRequestTool,
+
+    [Action.STAMPCHAIN_GET_STAMP]: stampchainGetStampTool,
+    [Action.STAMPCHAIN_SEARCH_STAMPS]: stampchainSearchStampsTool,
+    [Action.STAMPCHAIN_GET_RECENT_STAMPS]: stampchainGetRecentStampsTool,
+    [Action.STAMPCHAIN_GET_RECENT_SALES]: stampchainGetRecentSalesTool,
+    [Action.STAMPCHAIN_GET_MARKET_DATA]: stampchainGetMarketDataTool,
+    [Action.STAMPCHAIN_GET_STAMP_MARKET_DATA]: stampchainGetStampMarketDataTool,
+
+    [Action.PEXELS_SEARCH_PHOTOS]: pexelsSearchPhotosTool,
+    [Action.PEXELS_SEARCH_VIDEOS]: pexelsSearchVideosTool,
+    [Action.PEXELS_GET_PHOTO]: pexelsGetPhotoTool,
+    [Action.PEXELS_GET_VIDEO]: pexelsGetVideoTool,
+    [Action.PEXELS_GET_CURATED_PHOTOS]: pexelsGetCuratedPhotosTool,
+    [Action.PEXELS_GET_POPULAR_VIDEOS]: pexelsGetPopularVideosTool,
 }
 
 
