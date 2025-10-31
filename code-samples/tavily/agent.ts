@@ -13,10 +13,10 @@ const toolKit = new LangchainToolkit({
     appPrivateKey: P?.env?.SOLANA_PRIVATE_KEY,
 });
 
-const tools = toolKit.getTools({ apps: [App.GITHUB] });
+const tools = toolKit.getTools({ apps: [App.TAVILY] });
 const prompt = ChatPromptTemplate.fromMessages([
-    ["system", `You are an AI agent responsible for taking actions on GitHub on users' behalf. 
-        You need to take action on GitHub using GitHub APIs. Use correct tools to run APIs from the given tool-set.`],
+    ["system", `You are an AI agent that uses Tavily to search, extract, crawl and map websites on users' behalf.
+                You need to take action on Tavily using Tavily APIs. Use correct tools to run APIs from the given tool-set.`],
     ["placeholder", "{chat_history}"],
     ["human", "{input}"],
     ["placeholder", "{agent_scratchpad}"],
@@ -31,6 +31,8 @@ const agentExecutor = new AgentExecutor({
     verbose: false,
 });
 
-const response = await agentExecutor.invoke({ input: "Search for repositories related to 'machine learning python'" });
+const response = await agentExecutor.invoke({ input: "Use Tavily to find the latest Solana core updates (last 6 months, advanced). Prefer docs.solana.com, solana.com, solana.com/news, solana.org, foundation.solana.org. Summarize key changes with links and dates." });
 
 console.log(response);
+
+

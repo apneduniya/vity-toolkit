@@ -59,15 +59,18 @@ import { earnSubmissionDetailsTool } from "./earn/actions/submission-details";
 import { earnTotalUserCountTool } from "./earn/actions/total-user-count";
 import { earnFetchUserPublicStatsTool } from "./earn/actions/user-public-stats";
 import { earnFetchFeedTool } from "./earn/actions/feed";
+
 import { RedditTool } from "./reddit";
 import { redditFilterTool } from "./reddit/actions/filter";
 import { redditCommentTool } from "./reddit/actions/comment";
 import { redditCreatePostTool } from "./reddit/actions/create-post";
 import { redditDeletePostTool } from "./reddit/actions/delete-post";
+
 import { GibworkTool } from "./gibwork";
 import { gibworkExploreTool } from "./gibwork/actions/explore";
 import { gibworkTasksTool } from "./gibwork/actions/tasks";
 import { gibworkCreateTaskTool } from "./gibwork/actions/create-task";
+
 import { GitHubTool } from "./github";
 import { githubSearchRepositoriesTool } from "./github/actions/search-repositories";
 import { githubCreateRepositoryTool } from "./github/actions/create-repository";
@@ -83,6 +86,7 @@ import { stampchainGetRecentStampsTool } from "./stampchain/actions/get-recent-s
 import { stampchainGetRecentSalesTool } from "./stampchain/actions/get-recent-sales";
 import { stampchainGetMarketDataTool } from "./stampchain/actions/get-market-data";
 import { stampchainGetStampMarketDataTool } from "./stampchain/actions/get-stamp-market-data";
+
 import { PexelsTool } from "./pexels";
 import { pexelsSearchPhotosTool } from "./pexels/actions/search-photos";
 import { pexelsSearchVideosTool } from "./pexels/actions/search-videos";
@@ -104,6 +108,12 @@ import { notionListUsersTool } from "./notion/actions/list-users";
 import { notionListCommentsTool } from "./notion/actions/list-comments";
 import { notionCreateCommentTool } from "./notion/actions/create-comment";
 
+import { TavilyTool } from "./tavily";
+import { tavilySearchTool } from "./tavily/actions/search";
+import { tavilyExtractTool } from "./tavily/actions/extract";
+import { tavilyCrawlTool } from "./tavily/actions/crawl";
+import { tavilyMapTool } from "./tavily/actions/map";
+
 
 //  A P P S
 
@@ -117,6 +127,7 @@ export enum App {
     STAMPCHAIN = 'stampchain',
     PEXELS = 'pexels',
     NOTION = 'notion',
+    TAVILY = 'tavily',
 }
 
 export const appsMap = {
@@ -129,6 +140,7 @@ export const appsMap = {
     [App.STAMPCHAIN]: StampchainTool,
     [App.PEXELS]: PexelsTool,
     [App.NOTION]: NotionTool,
+    [App.TAVILY]: TavilyTool,
 }
 
 // Integrable apps
@@ -142,7 +154,7 @@ export type IntegrableApps = Extract<
 
 export type ConnectableApps = Extract<
     App,
-    App.TWITTER | App.REDDIT | App.GITHUB | App.PEXELS | App.NOTION
+    App.TWITTER | App.REDDIT | App.GITHUB | App.PEXELS | App.NOTION | App.TAVILY
 >;
 
 
@@ -246,6 +258,11 @@ export enum Action {
     NOTION_LIST_USERS,
     NOTION_LIST_COMMENTS,
     NOTION_CREATE_COMMENT,
+
+    TAVILY_SEARCH,
+    TAVILY_EXTRACT,
+    TAVILY_CRAWL,
+    TAVILY_MAP,
 }
 
 export const actionsMap = {
@@ -346,6 +363,11 @@ export const actionsMap = {
     [Action.NOTION_LIST_USERS]: notionListUsersTool,
     [Action.NOTION_LIST_COMMENTS]: notionListCommentsTool,
     [Action.NOTION_CREATE_COMMENT]: notionCreateCommentTool,
+
+    [Action.TAVILY_SEARCH]: tavilySearchTool,
+    [Action.TAVILY_EXTRACT]: tavilyExtractTool,
+    [Action.TAVILY_CRAWL]: tavilyCrawlTool,
+    [Action.TAVILY_MAP]: tavilyMapTool,
 }
 
 
