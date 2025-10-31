@@ -91,6 +91,19 @@ import { pexelsGetVideoTool } from "./pexels/actions/get-video";
 import { pexelsGetCuratedPhotosTool } from "./pexels/actions/get-curated-photos";
 import { pexelsGetPopularVideosTool } from "./pexels/actions/get-popular-videos";
 
+import { NotionTool } from "./notion";
+import { notionSearchTool } from "./notion/actions/search";
+import { notionGetPageTool } from "./notion/actions/get-page";
+import { notionGetDatabaseTool } from "./notion/actions/get-database";
+import { notionQueryDatabaseTool } from "./notion/actions/query-database";
+import { notionCreatePageTool } from "./notion/actions/create-page";
+import { notionAppendBlockChildrenTool } from "./notion/actions/append-block-children";
+import { notionRetrieveBlockTool } from "./notion/actions/retrieve-block";
+import { notionRetrieveBlockChildrenTool } from "./notion/actions/retrieve-block-children";
+import { notionListUsersTool } from "./notion/actions/list-users";
+import { notionListCommentsTool } from "./notion/actions/list-comments";
+import { notionCreateCommentTool } from "./notion/actions/create-comment";
+
 
 //  A P P S
 
@@ -103,6 +116,7 @@ export enum App {
     GITHUB = 'github',
     STAMPCHAIN = 'stampchain',
     PEXELS = 'pexels',
+    NOTION = 'notion',
 }
 
 export const appsMap = {
@@ -114,6 +128,7 @@ export const appsMap = {
     [App.GITHUB]: GitHubTool,
     [App.STAMPCHAIN]: StampchainTool,
     [App.PEXELS]: PexelsTool,
+    [App.NOTION]: NotionTool,
 }
 
 // Integrable apps
@@ -127,7 +142,7 @@ export type IntegrableApps = Extract<
 
 export type ConnectableApps = Extract<
     App,
-    App.TWITTER | App.REDDIT | App.GITHUB | App.PEXELS
+    App.TWITTER | App.REDDIT | App.GITHUB | App.PEXELS | App.NOTION
 >;
 
 
@@ -219,6 +234,18 @@ export enum Action {
     PEXELS_GET_VIDEO,
     PEXELS_GET_CURATED_PHOTOS,
     PEXELS_GET_POPULAR_VIDEOS,
+
+    NOTION_SEARCH,
+    NOTION_GET_PAGE,
+    NOTION_GET_DATABASE,
+    NOTION_QUERY_DATABASE,
+    NOTION_CREATE_PAGE,
+    NOTION_APPEND_BLOCK_CHILDREN,
+    NOTION_RETRIEVE_BLOCK,
+    NOTION_RETRIEVE_BLOCK_CHILDREN,
+    NOTION_LIST_USERS,
+    NOTION_LIST_COMMENTS,
+    NOTION_CREATE_COMMENT,
 }
 
 export const actionsMap = {
@@ -307,6 +334,18 @@ export const actionsMap = {
     [Action.PEXELS_GET_VIDEO]: pexelsGetVideoTool,
     [Action.PEXELS_GET_CURATED_PHOTOS]: pexelsGetCuratedPhotosTool,
     [Action.PEXELS_GET_POPULAR_VIDEOS]: pexelsGetPopularVideosTool,
+
+    [Action.NOTION_SEARCH]: notionSearchTool,
+    [Action.NOTION_GET_PAGE]: notionGetPageTool,
+    [Action.NOTION_GET_DATABASE]: notionGetDatabaseTool,
+    [Action.NOTION_QUERY_DATABASE]: notionQueryDatabaseTool,
+    [Action.NOTION_CREATE_PAGE]: notionCreatePageTool,
+    [Action.NOTION_APPEND_BLOCK_CHILDREN]: notionAppendBlockChildrenTool,
+    [Action.NOTION_RETRIEVE_BLOCK]: notionRetrieveBlockTool,
+    [Action.NOTION_RETRIEVE_BLOCK_CHILDREN]: notionRetrieveBlockChildrenTool,
+    [Action.NOTION_LIST_USERS]: notionListUsersTool,
+    [Action.NOTION_LIST_COMMENTS]: notionListCommentsTool,
+    [Action.NOTION_CREATE_COMMENT]: notionCreateCommentTool,
 }
 
 
