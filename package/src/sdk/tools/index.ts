@@ -1,11 +1,21 @@
 import { SolanaWalletTool } from "./solana-wallet";
 import { TwitterTool } from "./twitter";
 import { EarnTool } from "./earn";
+import { BasicMathTool } from "./basic-math";
+import { FakeWeatherTool } from "./fake-weather";
+import { LanguageTranslatorTool } from "./language-translator";
+import { GeoDistanceTool } from "./geo-distance";
+import { RandomizerTool } from "./randomizer";
 
 import { solanaWalletGenerateKeypairTool } from "./solana-wallet/actions/generate-keypair";
 import { solanaWalletGetBalanceTool } from "./solana-wallet/actions/get-balance";
 import { solanaWalletGetMyPublicKeyTool } from "./solana-wallet/actions/get-my-publicKey";
 import { solanaWalletTransferTool } from "./solana-wallet/actions/transfer";
+import { basicMathSolveTool } from "./basic-math/actions/solve";
+import { fakeWeatherGenerateTool } from "./fake-weather/actions/generate";
+import { languageTranslatorTool } from "./language-translator/actions/translate";
+import { geoDistanceCalculateTool } from "./geo-distance/actions/calculate";
+import { randomizerRunTool } from "./randomizer/actions/run";
 
 import {
     twitterSearchTool,
@@ -114,6 +124,10 @@ import { tavilyExtractTool } from "./tavily/actions/extract";
 import { tavilyCrawlTool } from "./tavily/actions/crawl";
 import { tavilyMapTool } from "./tavily/actions/map";
 
+import { AgentMailTool } from "./agentmail";
+import { agentmailListToolsTool } from "./agentmail/actions/list-tools";
+import { agentmailExecuteTool } from "./agentmail/actions/execute";
+
 
 //  A P P S
 
@@ -128,6 +142,12 @@ export enum App {
     PEXELS = 'pexels',
     NOTION = 'notion',
     TAVILY = 'tavily',
+    AGENTMAIL = 'agentmail',
+    BASIC_MATH = 'basic-math',
+    FAKE_WEATHER = 'fake-weather',
+    LANGUAGE_TRANSLATOR = 'language-translator',
+    GEO_DISTANCE = 'geo-distance',
+    RANDOMIZER = 'randomizer',
 }
 
 export const appsMap = {
@@ -141,6 +161,12 @@ export const appsMap = {
     [App.PEXELS]: PexelsTool,
     [App.NOTION]: NotionTool,
     [App.TAVILY]: TavilyTool,
+    [App.AGENTMAIL]: AgentMailTool,
+    [App.BASIC_MATH]: BasicMathTool,
+    [App.FAKE_WEATHER]: FakeWeatherTool,
+    [App.LANGUAGE_TRANSLATOR]: LanguageTranslatorTool,
+    [App.GEO_DISTANCE]: GeoDistanceTool,
+    [App.RANDOMIZER]: RandomizerTool,
 }
 
 // Integrable apps
@@ -154,7 +180,7 @@ export type IntegrableApps = Extract<
 
 export type ConnectableApps = Extract<
     App,
-    App.TWITTER | App.REDDIT | App.GITHUB | App.PEXELS | App.NOTION | App.TAVILY
+    App.TWITTER | App.REDDIT | App.GITHUB | App.PEXELS | App.NOTION | App.TAVILY | App.AGENTMAIL
 >;
 
 
@@ -263,6 +289,13 @@ export enum Action {
     TAVILY_EXTRACT,
     TAVILY_CRAWL,
     TAVILY_MAP,
+    AGENTMAIL_LIST_TOOLS,
+    AGENTMAIL_EXECUTE,
+    BASIC_MATH_SOLVE,
+    FAKE_WEATHER_GENERATE,
+    LANGUAGE_TRANSLATOR_TRANSLATE,
+    GEO_DISTANCE_CALCULATE,
+    RANDOMIZER_RUN,
 }
 
 export const actionsMap = {
@@ -368,6 +401,14 @@ export const actionsMap = {
     [Action.TAVILY_EXTRACT]: tavilyExtractTool,
     [Action.TAVILY_CRAWL]: tavilyCrawlTool,
     [Action.TAVILY_MAP]: tavilyMapTool,
+
+    [Action.AGENTMAIL_LIST_TOOLS]: agentmailListToolsTool,
+    [Action.AGENTMAIL_EXECUTE]: agentmailExecuteTool,
+    [Action.BASIC_MATH_SOLVE]: basicMathSolveTool,
+    [Action.FAKE_WEATHER_GENERATE]: fakeWeatherGenerateTool,
+    [Action.LANGUAGE_TRANSLATOR_TRANSLATE]: languageTranslatorTool,
+    [Action.GEO_DISTANCE_CALCULATE]: geoDistanceCalculateTool,
+    [Action.RANDOMIZER_RUN]: randomizerRunTool,
 }
 
 

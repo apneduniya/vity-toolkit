@@ -1,11 +1,13 @@
-import { type AnyZodObject } from "zod";
+import { type ZodObject } from "zod";
+
+type ZodObjectAny = ZodObject<any, any, any, any, any>;
 // import { tool, DynamicStructuredTool } from "@langchain/core/tools";
 
 
 export type ToolConfig = {
   name: string;
   description: string;
-  inputParams: AnyZodObject;
+  inputParams: ZodObjectAny;
   execute: (input: any) => Promise<any>;
 
   isDynamic?: boolean;
@@ -36,7 +38,7 @@ export function createAction(config: ToolConfig): ToolConfig {
   return {
     name,
     description,
-    inputParams: inputParams as AnyZodObject,
+    inputParams: inputParams as ZodObjectAny,
     execute: async (input: any) => await execute(input),
   }
 }

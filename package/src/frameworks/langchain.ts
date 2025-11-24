@@ -40,7 +40,10 @@ export class LangchainToolkit extends VityToolKit {
         });
     }
 
-    getTools({ apps, actions }: { apps?: App[], actions?: Action[] }) {
+    getTools(): any[];
+    getTools(params: { apps?: App[], actions?: Action[] }): any[];
+    getTools(params: { apps?: App[], actions?: Action[] } = {}): any[] {
+        const { apps, actions } = params;
         const appTools = apps ? this._getApps(apps) : [];
         const actionTools = actions ? this._getActions(actions) : [];
 
