@@ -9,7 +9,7 @@ export class StampchainTool {
     getTools() {
         return [
             stampchainGetStampTool,
-            stampchainSearchStampsTool,
+        stampchainSearchStampsTool,
             stampchainGetRecentStampsTool,
             stampchainGetRecentSalesTool,
             stampchainGetMarketDataTool,

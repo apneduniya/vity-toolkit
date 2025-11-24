@@ -2,6 +2,8 @@ import { VityToolKit } from './sdk';
 import { Action, App } from './sdk/tools';
 import { createAction } from './sdk/helpers/createAction';
 import { LangchainToolkit } from './frameworks/langchain';
+import { LlamaIndexToolkit } from './frameworks/llamaindex';
+import { OpenAIToolkit } from './frameworks/openai';
 import { VercelAIToolkit } from './frameworks/vercel';
 import { ApiKeyService } from './sdk/utils/apiKeyService';
 import { AuthType } from './sdk/types';
@@ -10,13 +12,19 @@ import { AuthType } from './sdk/types';
 
 export {
     VityToolKit,
+
     Action,
     App,
+
     createAction,
+
     LangchainToolkit,
+    LlamaIndexToolkit,
+    OpenAIToolkit,
     VercelAIToolkit,
+
     ApiKeyService,
-    AuthType
+    AuthType,
     // Lit
 }
 

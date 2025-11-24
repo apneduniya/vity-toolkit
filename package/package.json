@@ -31,7 +31,9 @@
     "url": "https://x.com/thatsmeadarsh"
   },
   "devDependencies": {
+    "@llamaindex/core": "*",
     "@types/bun": "latest",
+    "llamaindex": "*",
     "tsup": "^8.3.5"
   },
   "peerDependencies": {
@@ -68,6 +70,7 @@
     "tweetnacl": "^1.0.3",
     "twitter-api-v2": "^1.18.2",
     "winston": "^3.17.0",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.24.6"
   }
 }
