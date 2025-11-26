@@ -1,12 +1,13 @@
 import { VityToolKit } from './sdk';
 import { Action, App } from './sdk/tools';
-import { createAction } from './sdk/helpers/createAction';
+import { createAction, type ToolConfig } from './sdk/helpers/createAction';
 import { LangchainToolkit } from './frameworks/langchain';
 import { LlamaIndexToolkit } from './frameworks/llamaindex';
 import { OpenAIToolkit } from './frameworks/openai';
 import { VercelAIToolkit } from './frameworks/vercel';
 import { ApiKeyService } from './sdk/utils/apiKeyService';
 import { AuthType } from './sdk/types';
+import { StorageProvider } from './storage-providers';
 // import { Lit } from './sdk/utils/lit-protocol';
 
 
@@ -17,6 +18,7 @@ export {
     App,
 
     createAction,
+    type ToolConfig,
 
     LangchainToolkit,
     LlamaIndexToolkit,
@@ -25,6 +27,7 @@ export {
 
     ApiKeyService,
     AuthType,
+    StorageProvider,
     // Lit
 }
 

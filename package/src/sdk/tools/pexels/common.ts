@@ -19,15 +19,21 @@ export async function makePexelsRequest(
       params: method.toUpperCase() === 'GET' ? data : undefined,
       data: method.toUpperCase() !== 'GET' ? data : undefined,
       headers: {
-        'Authorization': apiKey,
+        Authorization: apiKey,
         'Content-Type': 'application/json',
         'User-Agent': 'VityToolKit-Pexels-Client',
       },
     });
     return response.data;
   } catch (error: any) {
-    throw new Error(
-      `Pexels API Error: ${error.response?.data?.error || error.response?.data || error.message}`
-    );
+    const raw = error?.response?.data?.error ?? error?.response?.data ?? error?.message;
+    const detail =
+      typeof raw === 'string'
+        ? raw
+        : raw
+        ? JSON.stringify(raw)
+        : 'Unknown Pexels API error';
+
+    throw new Error(`Pexels API Error: ${detail}`);
   }
 }

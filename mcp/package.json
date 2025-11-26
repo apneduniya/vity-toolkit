@@ -1,0 +1,43 @@
+{
+    "name": "mcp",
+    "version": "0.1.0",
+    "description": "VityToolKit MCP Server",
+    "type": "module",
+    "bin": {
+        "mcp": "dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint .",
+        "prettier": "prettier --write .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "VityToolKit",
+        "MCP",
+        "Model Context Protocol"
+    ],
+    "author": "Adarsh",
+    "license": "MIT",
+    "packageManager": "pnpm@10.6.4",
+    "devDependencies": {
+        "@eslint/js": "^9.29.0",
+        "@types/node": "^24.0.1",
+        "eslint": "^9.29.0",
+        "eslint-config-prettier": "^10.1.5",
+        "globals": "^16.2.0",
+        "prettier": "3.5.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.34.0"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.12.3",
+        "dotenv": "^17.2.3",
+        "vity-toolkit": "file:../package",
+        "zod-to-json-schema": "^3.24.6"
+    }
+}
