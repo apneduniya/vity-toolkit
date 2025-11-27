@@ -1,9 +1,9 @@
-import { DynamicStructuredTool } from "langchain/tools";
+import { DynamicStructuredTool } from "@langchain/core/tools";
+import { z } from "zod";
 import { VityToolKit } from "../sdk";
 import type { ToolConfig } from "../sdk/helpers/createAction";
 import type { Action, App } from "../sdk/tools";
 import type { StorageProvider } from "../storage-providers";
-
 
 export class LangchainToolkit extends VityToolKit {
 
@@ -31,10 +31,12 @@ export class LangchainToolkit extends VityToolKit {
 
             const func = async (input: any) => await execute(input);
 
+            // Pass Zod schema directly to DynamicStructuredTool
+            // It will convert internally - we ensure it's properly structured
             return new DynamicStructuredTool({
                 name,
                 description,
-                schema: inputParams,
+                schema: inputParams || z.object({}),
                 func,
             });
         });

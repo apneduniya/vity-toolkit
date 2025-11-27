@@ -1,6 +1,6 @@
 import { type ZodObject } from "zod";
 
-type ZodObjectAny = ZodObject<any, any, any, any, any>;
+type ZodObjectAny = ZodObject<any, any>;
 // import { tool, DynamicStructuredTool } from "@langchain/core/tools";
 
 

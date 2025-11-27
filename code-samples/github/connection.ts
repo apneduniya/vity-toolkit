@@ -2,10 +2,12 @@ import { VityToolKit } from "vity-toolkit";
 import { App } from "vity-toolkit";
 import { AuthType } from "vity-toolkit/src/sdk/types";
 
+const P = (globalThis as any).process;
+
 const connection = async () => {
     const toolKit = new VityToolKit({
-        appPrivateKey: process.env.SOLANA_PRIVATE_KEY,
-        userPrivateKey: process.env.SOLANA_PRIVATE_KEY,
+        appPrivateKey: P?.env?.SOLANA_PRIVATE_KEY,
+        userPrivateKey: P?.env?.SOLANA_PRIVATE_KEY,
     });
 
     // Check if GitHub is connected
@@ -22,7 +24,7 @@ const connection = async () => {
             app: App.GITHUB,
             type: AuthType.API_KEY,
             authData: {
-                GITHUB_PAT: process.env.GITHUB_PAT
+                GITHUB_PAT: P?.env?.GITHUB_PAT
             }
         });
         

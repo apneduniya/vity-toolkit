@@ -3,7 +3,7 @@ import type { ToolConfig } from "../sdk/helpers/createAction";
 import type { Action, App } from "../sdk/tools";
 import type { StorageProvider } from "../storage-providers";
 import { tool, type CoreTool } from "ai";
-
+import { z } from "zod";
 
 export class VercelAIToolkit extends VityToolKit {
 
@@ -26,15 +26,16 @@ export class VercelAIToolkit extends VityToolKit {
     }
 
     private schemaToTool(schemas: ToolConfig[]) {
-        return schemas.map(schema => {
-            const { name, description, inputParams, execute } = schema;
+        return schemas.map(toolConfig => {
+            const { name, description, inputParams, execute } = toolConfig;
 
-            const func = async (input: any) => await execute(input);
+            const schema =
+                inputParams && "shape" in inputParams ? inputParams : z.object({});
 
             return tool({
                 description,
-                parameters: inputParams || {}, // Ensure parameters are provided
-                execute: func // Use the defined function
+                parameters: schema,
+                execute: async (input: any) => await execute(input),
             });
         });
     }
